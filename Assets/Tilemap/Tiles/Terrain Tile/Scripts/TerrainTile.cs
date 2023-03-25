@@ -12,7 +12,6 @@ using UnityEngine;
 namespace UnityEngine.Tilemaps
 {
 	[Serializable]
-	[CreateAssetMenu(fileName = "New Terrain Tile", menuName = "Tiles/Terrain Tile")]
 	public class TerrainTile : TileBase
 	{
 		[SerializeField]
@@ -168,6 +167,19 @@ namespace UnityEngine.Tilemaps
 			}
 			return Matrix4x4.identity;
 		}
+
+#if UNITY_EDITOR
+		[MenuItem("Assets/Create/Terrain Tile")]
+		public static void CreateTerrainTile()
+		{
+			string path = EditorUtility.SaveFilePanelInProject("Save Terrain Tile", "New Terrain Tile", "asset", "Save Terrain Tile", "Assets");
+
+			if (path == "")
+				return;
+
+			AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<TerrainTile>(), path);
+		}
+#endif
 	}
 
 #if UNITY_EDITOR

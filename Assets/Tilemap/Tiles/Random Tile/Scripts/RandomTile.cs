@@ -11,7 +11,6 @@ using UnityEngine;
 namespace UnityEngine.Tilemaps
 {
 	[Serializable]
-	[CreateAssetMenu(fileName = "New Random Tile", menuName = "Tiles/Random Tile")]
 	public class RandomTile : Tile
 	{
 		[SerializeField]
@@ -32,6 +31,19 @@ namespace UnityEngine.Tilemaps
 				tileData.sprite = m_Sprites[(int) (m_Sprites.Length * Random.value)];
 			}
 		}
+
+#if UNITY_EDITOR
+		[MenuItem("Assets/Create/Random Tile")]
+		public static void CreateRandomTile()
+		{
+			string path = EditorUtility.SaveFilePanelInProject("Save Random Tile", "New Random Tile", "asset", "Save Random Tile", "Assets");
+
+			if (path == "")
+				return;
+
+			AssetDatabase.CreateAsset(ScriptableObject.CreateInstance<RandomTile>(), path);
+		}
+#endif
 	}
 
 #if UNITY_EDITOR

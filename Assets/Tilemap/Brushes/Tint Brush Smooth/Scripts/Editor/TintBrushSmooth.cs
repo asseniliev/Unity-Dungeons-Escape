@@ -25,7 +25,6 @@ namespace UnityEditor
 			}
 		}
 
-		public float m_Blend = 1f;
 		public Color m_Color = Color.white;
 
 		public override void Paint(GridLayout grid, GameObject brushTarget, Vector3Int position)
@@ -37,9 +36,7 @@ namespace UnityEditor
 			TintTextureGenerator generator = GetGenerator(grid);
 			if (generator != null)
 			{
-				var oldColor = generator.GetColor(grid as Grid, position);
-				var blendColor = oldColor * (1 - m_Blend) + m_Color * m_Blend;
-				generator.SetColor(grid as Grid, position, blendColor);
+				generator.SetColor(grid as Grid, position, m_Color);
 			}
 		}
 
@@ -86,8 +83,6 @@ namespace UnityEditor
 	[CustomEditor(typeof(TintBrushSmooth))]
 	public class TintBrushSmoothEditor : GridBrushEditorBase
 	{
-		public TintBrushSmooth brush { get { return target as TintBrushSmooth; } }
-
 		public override GameObject[] validTargets
 		{
 			get
@@ -98,8 +93,7 @@ namespace UnityEditor
 
 		public override void OnPaintInspectorGUI()
 		{
-			brush.m_Color = EditorGUILayout.ColorField("Color", brush.m_Color);
-			brush.m_Blend = EditorGUILayout.Slider("Blend", brush.m_Blend, 0f, 1f);
+			base.OnPaintInspectorGUI();
 			GUILayout.Label("Note: Tilemap needs to use TintedTilemap.shader!");
 		}
 	}
