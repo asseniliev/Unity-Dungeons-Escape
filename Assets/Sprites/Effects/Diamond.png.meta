@@ -1,7 +1,476 @@
 fileFormatVersion: 2
 guid: 536b2f426b5ee804a93fbd7e03aeaa6c
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Diamond_0
+    21300002: Diamond_1
+    21300004: Diamond_2
+    21300006: Diamond_3
+    21300008: Diamond_4
+    21300010: Diamond_5
+    21300012: Diamond_6
+    21300014: Diamond_7
+    21300016: Diamond_8
+    21300018: Diamond_9
+    21300020: Diamond_10
+    21300022: Diamond_11
+    21300024: Diamond_12
+    21300026: Diamond_13
+    21300028: Diamond_14
+    21300030: Diamond_15
+    21300032: Diamond_16
+    21300034: Diamond_17
+    21300036: Diamond_18
+    21300038: Diamond_19
+    21300040: Diamond_20
+    21300042: Diamond_21
+    21300044: Diamond_22
+    21300046: Diamond_23
+    21300048: Diamond_24
+    21300050: Diamond_25
+    21300052: Diamond_26
+    21300054: Diamond_27
+    21300056: Diamond_28
+    21300058: Diamond_29
+    21300060: Diamond_30
+    21300062: Diamond_31
+    21300064: Diamond_32
+    21300066: Diamond_33
+    21300068: Diamond_34
+    21300070: Diamond_35
+    21300072: Diamond_36
+    21300074: Diamond_37
+    21300076: Diamond_38
+    21300078: Diamond_39
+    21300080: Diamond_40
+    21300082: Diamond_41
+    21300084: Diamond_42
+    21300086: Diamond_43
+    21300088: Diamond_44
+    21300090: Diamond_45
+    21300092: Diamond_46
+    21300094: Diamond_47
+    21300096: Diamond_48
+    21300098: Diamond_49
+    21300100: Diamond_50
+    21300102: Diamond_51
+    21300104: Diamond_52
+    21300106: Diamond_53
+    21300108: Diamond_54
+    21300110: Diamond_55
+    21300112: Diamond_56
+    21300114: Diamond_57
+    21300116: Diamond_58
+    21300118: Diamond_59
+    21300120: Diamond_60
+    21300122: Diamond_61
+    21300124: Diamond_62
+    21300126: Diamond_63
+    21300128: Diamond_64
+    21300130: Diamond_65
+    21300132: Diamond_66
+    21300134: Diamond_67
+    21300136: Diamond_68
+    21300138: Diamond_69
+    21300140: Diamond_70
+    21300142: Diamond_71
+    21300144: Diamond_72
+    21300146: Diamond_73
+    21300148: Diamond_74
+    21300150: Diamond_75
+    21300152: Diamond_76
+    21300154: Diamond_77
+    21300156: Diamond_78
+    21300158: Diamond_79
+    21300160: Diamond_80
+    21300162: Diamond_81
+    21300164: Diamond_82
+    21300166: Diamond_83
+    21300168: Diamond_84
+    21300170: Diamond_85
+    21300172: Diamond_86
+    21300174: Diamond_87
+    21300176: Diamond_88
+    21300178: Diamond_89
+    21300180: Diamond_90
+    21300182: Diamond_91
+    21300184: Diamond_92
+    21300186: Diamond_93
+    21300188: Diamond_94
+    21300190: Diamond_95
+    21300192: Diamond_96
+    21300194: Diamond_97
+    21300196: Diamond_98
+    21300198: Diamond_99
+    21300200: Diamond_100
+    21300202: Diamond_101
+    21300204: Diamond_102
+    21300206: Diamond_103
+    21300208: Diamond_104
+    21300210: Diamond_105
+    21300212: Diamond_106
+    21300214: Diamond_107
+    21300216: Diamond_108
+    21300218: Diamond_109
+    21300220: Diamond_110
+    21300222: Diamond_111
+    21300224: Diamond_112
+    21300226: Diamond_113
+    21300228: Diamond_114
+    21300230: Diamond_115
+    21300232: Diamond_116
+    21300234: Diamond_117
+    21300236: Diamond_118
+    21300238: Diamond_119
+    21300240: Diamond_120
+    21300242: Diamond_121
+    21300244: Diamond_122
+    21300246: Diamond_123
+    21300248: Diamond_124
+    21300250: Diamond_125
+    21300252: Diamond_126
+    21300254: Diamond_127
+    21300256: Diamond_128
+    21300258: Diamond_129
+    21300260: Diamond_130
+    21300262: Diamond_131
+    21300264: Diamond_132
+    21300266: Diamond_133
+    21300268: Diamond_134
+    21300270: Diamond_135
+    21300272: Diamond_136
+    21300274: Diamond_137
+    21300276: Diamond_138
+    21300278: Diamond_139
+    21300280: Diamond_140
+    21300282: Diamond_141
+    21300284: Diamond_142
+    21300286: Diamond_143
+    21300288: Diamond_144
+    21300290: Diamond_145
+    21300292: Diamond_146
+    21300294: Diamond_147
+    21300296: Diamond_148
+    21300298: Diamond_149
+    21300300: Diamond_150
+    21300302: Diamond_151
+    21300304: Diamond_152
+    21300306: Diamond_153
+    21300308: Diamond_154
+    21300310: Diamond_155
+    21300312: Diamond_156
+    21300314: Diamond_157
+    21300316: Diamond_158
+    21300318: Diamond_159
+    21300320: Diamond_160
+    21300322: Diamond_161
+    21300324: Diamond_162
+    21300326: Diamond_163
+    21300328: Diamond_164
+    21300330: Diamond_165
+    21300332: Diamond_166
+    21300334: Diamond_167
+    21300336: Diamond_168
+    21300338: Diamond_169
+    21300340: Diamond_170
+    21300342: Diamond_171
+    21300344: Diamond_172
+    21300346: Diamond_173
+    21300348: Diamond_174
+    21300350: Diamond_175
+    21300352: Diamond_176
+    21300354: Diamond_177
+    21300356: Diamond_178
+    21300358: Diamond_179
+    21300360: Diamond_180
+    21300362: Diamond_181
+    21300364: Diamond_182
+    21300366: Diamond_183
+    21300368: Diamond_184
+    21300370: Diamond_185
+    21300372: Diamond_186
+    21300374: Diamond_187
+    21300376: Diamond_188
+    21300378: Diamond_189
+    21300380: Diamond_190
+    21300382: Diamond_191
+    21300384: Diamond_192
+    21300386: Diamond_193
+    21300388: Diamond_194
+    21300390: Diamond_195
+    21300392: Diamond_196
+    21300394: Diamond_197
+    21300396: Diamond_198
+    21300398: Diamond_199
+    21300400: Diamond_200
+    21300402: Diamond_201
+    21300404: Diamond_202
+    21300406: Diamond_203
+    21300408: Diamond_204
+    21300410: Diamond_205
+    21300412: Diamond_206
+    21300414: Diamond_207
+    21300416: Diamond_208
+    21300418: Diamond_209
+    21300420: Diamond_210
+    21300422: Diamond_211
+    21300424: Diamond_212
+    21300426: Diamond_213
+    21300428: Diamond_214
+    21300430: Diamond_215
+    21300432: Diamond_216
+    21300434: Diamond_217
+    21300436: Diamond_218
+    21300438: Diamond_219
+    21300440: Diamond_220
+    21300442: Diamond_221
+    21300444: Diamond_222
+    21300446: Diamond_223
+    21300448: Diamond_224
+    21300450: Diamond_225
+    21300452: Diamond_226
+    21300454: Diamond_227
+    21300456: Diamond_228
+    21300458: Diamond_229
+    21300460: Diamond_230
+    21300462: Diamond_231
+    21300464: Diamond_232
+    21300466: Diamond_233
+    21300468: Diamond_234
+    21300470: Diamond_235
+    21300472: Diamond_236
+    21300474: Diamond_237
+    21300476: Diamond_238
+    21300478: Diamond_239
+    21300480: Diamond_240
+    21300482: Diamond_241
+    21300484: Diamond_242
+    21300486: Diamond_243
+    21300488: Diamond_244
+    21300490: Diamond_245
+    21300492: Diamond_246
+    21300494: Diamond_247
+    21300496: Diamond_248
+    21300498: Diamond_249
+    21300500: Diamond_250
+    21300502: Diamond_251
+    21300504: Diamond_252
+    21300506: Diamond_253
+    21300508: Diamond_254
+    21300510: Diamond_255
+    21300512: Diamond_256
+    21300514: Diamond_257
+    21300516: Diamond_258
+    21300518: Diamond_259
+    21300520: Diamond_260
+    21300522: Diamond_261
+    21300524: Diamond_262
+    21300526: Diamond_263
+    21300528: Diamond_264
+    21300530: Diamond_265
+    21300532: Diamond_266
+    21300534: Diamond_267
+    21300536: Diamond_268
+    21300538: Diamond_269
+    21300540: Diamond_270
+    21300542: Diamond_271
+    21300544: Diamond_272
+    21300546: Diamond_273
+    21300548: Diamond_274
+    21300550: Diamond_275
+    21300552: Diamond_276
+    21300554: Diamond_277
+    21300556: Diamond_278
+    21300558: Diamond_279
+    21300560: Diamond_280
+    21300562: Diamond_281
+    21300564: Diamond_282
+    21300566: Diamond_283
+    21300568: Diamond_284
+    21300570: Diamond_285
+    21300572: Diamond_286
+    21300574: Diamond_287
+    21300576: Diamond_288
+    21300578: Diamond_289
+    21300580: Diamond_290
+    21300582: Diamond_291
+    21300584: Diamond_292
+    21300586: Diamond_293
+    21300588: Diamond_294
+    21300590: Diamond_295
+    21300592: Diamond_296
+    21300594: Diamond_297
+    21300596: Diamond_298
+    21300598: Diamond_299
+    21300600: Diamond_300
+    21300602: Diamond_301
+    21300604: Diamond_302
+    21300606: Diamond_303
+    21300608: Diamond_304
+    21300610: Diamond_305
+    21300612: Diamond_306
+    21300614: Diamond_307
+    21300616: Diamond_308
+    21300618: Diamond_309
+    21300620: Diamond_310
+    21300622: Diamond_311
+    21300624: Diamond_312
+    21300626: Diamond_313
+    21300628: Diamond_314
+    21300630: Diamond_315
+    21300632: Diamond_316
+    21300634: Diamond_317
+    21300636: Diamond_318
+    21300638: Diamond_319
+    21300640: Diamond_320
+    21300642: Diamond_321
+    21300644: Diamond_322
+    21300646: Diamond_323
+    21300648: Diamond_324
+    21300650: Diamond_325
+    21300652: Diamond_326
+    21300654: Diamond_327
+    21300656: Diamond_328
+    21300658: Diamond_329
+    21300660: Diamond_330
+    21300662: Diamond_331
+    21300664: Diamond_332
+    21300666: Diamond_333
+    21300668: Diamond_334
+    21300670: Diamond_335
+    21300672: Diamond_336
+    21300674: Diamond_337
+    21300676: Diamond_338
+    21300678: Diamond_339
+    21300680: Diamond_340
+    21300682: Diamond_341
+    21300684: Diamond_342
+    21300686: Diamond_343
+    21300688: Diamond_344
+    21300690: Diamond_345
+    21300692: Diamond_346
+    21300694: Diamond_347
+    21300696: Diamond_348
+    21300698: Diamond_349
+    21300700: Diamond_350
+    21300702: Diamond_351
+    21300704: Diamond_352
+    21300706: Diamond_353
+    21300708: Diamond_354
+    21300710: Diamond_355
+    21300712: Diamond_356
+    21300714: Diamond_357
+    21300716: Diamond_358
+    21300718: Diamond_359
+    21300720: Diamond_360
+    21300722: Diamond_361
+    21300724: Diamond_362
+    21300726: Diamond_363
+    21300728: Diamond_364
+    21300730: Diamond_365
+    21300732: Diamond_366
+    21300734: Diamond_367
+    21300736: Diamond_368
+    21300738: Diamond_369
+    21300740: Diamond_370
+    21300742: Diamond_371
+    21300744: Diamond_372
+    21300746: Diamond_373
+    21300748: Diamond_374
+    21300750: Diamond_375
+    21300752: Diamond_376
+    21300754: Diamond_377
+    21300756: Diamond_378
+    21300758: Diamond_379
+    21300760: Diamond_380
+    21300762: Diamond_381
+    21300764: Diamond_382
+    21300766: Diamond_383
+    21300768: Diamond_384
+    21300770: Diamond_385
+    21300772: Diamond_386
+    21300774: Diamond_387
+    21300776: Diamond_388
+    21300778: Diamond_389
+    21300780: Diamond_390
+    21300782: Diamond_391
+    21300784: Diamond_392
+    21300786: Diamond_393
+    21300788: Diamond_394
+    21300790: Diamond_395
+    21300792: Diamond_396
+    21300794: Diamond_397
+    21300796: Diamond_398
+    21300798: Diamond_399
+    21300800: Diamond_400
+    21300802: Diamond_401
+    21300804: Diamond_402
+    21300806: Diamond_403
+    21300808: Diamond_404
+    21300810: Diamond_405
+    21300812: Diamond_406
+    21300814: Diamond_407
+    21300816: Diamond_408
+    21300818: Diamond_409
+    21300820: Diamond_410
+    21300822: Diamond_411
+    21300824: Diamond_412
+    21300826: Diamond_413
+    21300828: Diamond_414
+    21300830: Diamond_415
+    21300832: Diamond_416
+    21300834: Diamond_417
+    21300836: Diamond_418
+    21300838: Diamond_419
+    21300840: Diamond_420
+    21300842: Diamond_421
+    21300844: Diamond_422
+    21300846: Diamond_423
+    21300848: Diamond_424
+    21300850: Diamond_425
+    21300852: Diamond_426
+    21300854: Diamond_427
+    21300856: Diamond_428
+    21300858: Diamond_429
+    21300860: Diamond_430
+    21300862: Diamond_431
+    21300864: Diamond_432
+    21300866: Diamond_433
+    21300868: Diamond_434
+    21300870: Diamond_435
+    21300872: Diamond_436
+    21300874: Diamond_437
+    21300876: Diamond_438
+    21300878: Diamond_439
+    21300880: Diamond_440
+    21300882: Diamond_441
+    21300884: Diamond_442
+    21300886: Diamond_443
+    21300888: Diamond_444
+    21300890: Diamond_445
+    21300892: Diamond_446
+    21300894: Diamond_447
+    21300896: Diamond_448
+    21300898: Diamond_449
+    21300900: Diamond_450
+    21300902: Diamond_451
+    21300904: Diamond_452
+    21300906: Diamond_453
+    21300908: Diamond_454
+    21300910: Diamond_455
+    21300912: Diamond_456
+    21300914: Diamond_457
+    21300916: Diamond_458
+    21300918: Diamond_459
+    21300920: Diamond_460
+    21300922: Diamond_461
+    21300924: Diamond_462
+    21300926: Diamond_463
+    21300928: Diamond_464
+    21300930: Diamond_465
+    21300932: Diamond_466
+    21300934: Diamond_467
+    21300936: Diamond_468
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -38,7 +507,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,9 +536,653 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Diamond_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1792
+        width: 123
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03a0e342f59e2f4e8260c087fc5d06b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 1792
+        width: 124
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24fa815c6e537b40809fe2305e7836c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1664
+        width: 124
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abc7b6e72d967949a3b0f3e809eb299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1664
+        width: 122
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b0e132abd285d41ab33f8a664c7eca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1536
+        width: 121
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675bfb6f05d30a64792258092fbcb059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_5
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1536
+        width: 122
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00074feb4227985418d2df6564fb02da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1408
+        width: 123
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4cb052378950f41a0e3240b2cca9a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1408
+        width: 124
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8edd6f55edca3c42b262466fb63456d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1284
+        width: 122
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4e28260bfd9df49b95395ebb491fc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_9
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1285
+        width: 123
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3b6afc8fa3ab24e92b818bda9e5d14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1156
+        width: 123
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d517471f96f47478a0329e116cbb17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1158
+        width: 124
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916e45cc063d2fc4aae59ea164558b8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1030
+        width: 124
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988442268c0c1b741aa15360beb678e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_13
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1030
+        width: 124
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4f5529e57de3d4689d6d3c1265dd11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 902
+        width: 125
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b95add4dce45674187c18cb61a4c57a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 898
+        width: 125
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778a4ecd3cdfae44db3b17b4d41a3ffb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 769
+        width: 125
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e804b55a968884ca1a9b61c586f63a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_17
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 769
+        width: 125
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281b646653defb04396b50676811b241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 641
+        width: 125
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3bcde02479d654183a9a2f3c89264b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_19
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 642
+        width: 126
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a135b93dde50448abee7796c9bc1fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_20
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 516
+        width: 125
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 011fb2bdd0bc6914193a8359a673b1f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_21
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 517
+        width: 124
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6512da82d662b8c4c814949c909d147d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_22
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 392
+        width: 124
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1abd23fdd2cea534589761ad71880061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_23
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 389
+        width: 124
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c178719f62a8b7d43b815b2c9e06dcc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 259
+        width: 124
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27fad7625037384097d16082a5e0d93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_25
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 257
+        width: 125
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eda7c812125c4d4ca5e7e52afa3d1ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_26
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 128
+        width: 125
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472b45e528f8b48498eb97134315e9dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_27
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 129
+        width: 122
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53548db66991411409a697f175c92415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 1
+        width: 120
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72ea8b7cde7ead47b0e538ac621b064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 123
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66660a664d26c2742911690c3ee8308c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
