@@ -1,478 +1,1416 @@
 fileFormatVersion: 2
 guid: 536b2f426b5ee804a93fbd7e03aeaa6c
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Diamond_0
-    21300002: Diamond_1
-    21300004: Diamond_2
-    21300006: Diamond_3
-    21300008: Diamond_4
-    21300010: Diamond_5
-    21300012: Diamond_6
-    21300014: Diamond_7
-    21300016: Diamond_8
-    21300018: Diamond_9
-    21300020: Diamond_10
-    21300022: Diamond_11
-    21300024: Diamond_12
-    21300026: Diamond_13
-    21300028: Diamond_14
-    21300030: Diamond_15
-    21300032: Diamond_16
-    21300034: Diamond_17
-    21300036: Diamond_18
-    21300038: Diamond_19
-    21300040: Diamond_20
-    21300042: Diamond_21
-    21300044: Diamond_22
-    21300046: Diamond_23
-    21300048: Diamond_24
-    21300050: Diamond_25
-    21300052: Diamond_26
-    21300054: Diamond_27
-    21300056: Diamond_28
-    21300058: Diamond_29
-    21300060: Diamond_30
-    21300062: Diamond_31
-    21300064: Diamond_32
-    21300066: Diamond_33
-    21300068: Diamond_34
-    21300070: Diamond_35
-    21300072: Diamond_36
-    21300074: Diamond_37
-    21300076: Diamond_38
-    21300078: Diamond_39
-    21300080: Diamond_40
-    21300082: Diamond_41
-    21300084: Diamond_42
-    21300086: Diamond_43
-    21300088: Diamond_44
-    21300090: Diamond_45
-    21300092: Diamond_46
-    21300094: Diamond_47
-    21300096: Diamond_48
-    21300098: Diamond_49
-    21300100: Diamond_50
-    21300102: Diamond_51
-    21300104: Diamond_52
-    21300106: Diamond_53
-    21300108: Diamond_54
-    21300110: Diamond_55
-    21300112: Diamond_56
-    21300114: Diamond_57
-    21300116: Diamond_58
-    21300118: Diamond_59
-    21300120: Diamond_60
-    21300122: Diamond_61
-    21300124: Diamond_62
-    21300126: Diamond_63
-    21300128: Diamond_64
-    21300130: Diamond_65
-    21300132: Diamond_66
-    21300134: Diamond_67
-    21300136: Diamond_68
-    21300138: Diamond_69
-    21300140: Diamond_70
-    21300142: Diamond_71
-    21300144: Diamond_72
-    21300146: Diamond_73
-    21300148: Diamond_74
-    21300150: Diamond_75
-    21300152: Diamond_76
-    21300154: Diamond_77
-    21300156: Diamond_78
-    21300158: Diamond_79
-    21300160: Diamond_80
-    21300162: Diamond_81
-    21300164: Diamond_82
-    21300166: Diamond_83
-    21300168: Diamond_84
-    21300170: Diamond_85
-    21300172: Diamond_86
-    21300174: Diamond_87
-    21300176: Diamond_88
-    21300178: Diamond_89
-    21300180: Diamond_90
-    21300182: Diamond_91
-    21300184: Diamond_92
-    21300186: Diamond_93
-    21300188: Diamond_94
-    21300190: Diamond_95
-    21300192: Diamond_96
-    21300194: Diamond_97
-    21300196: Diamond_98
-    21300198: Diamond_99
-    21300200: Diamond_100
-    21300202: Diamond_101
-    21300204: Diamond_102
-    21300206: Diamond_103
-    21300208: Diamond_104
-    21300210: Diamond_105
-    21300212: Diamond_106
-    21300214: Diamond_107
-    21300216: Diamond_108
-    21300218: Diamond_109
-    21300220: Diamond_110
-    21300222: Diamond_111
-    21300224: Diamond_112
-    21300226: Diamond_113
-    21300228: Diamond_114
-    21300230: Diamond_115
-    21300232: Diamond_116
-    21300234: Diamond_117
-    21300236: Diamond_118
-    21300238: Diamond_119
-    21300240: Diamond_120
-    21300242: Diamond_121
-    21300244: Diamond_122
-    21300246: Diamond_123
-    21300248: Diamond_124
-    21300250: Diamond_125
-    21300252: Diamond_126
-    21300254: Diamond_127
-    21300256: Diamond_128
-    21300258: Diamond_129
-    21300260: Diamond_130
-    21300262: Diamond_131
-    21300264: Diamond_132
-    21300266: Diamond_133
-    21300268: Diamond_134
-    21300270: Diamond_135
-    21300272: Diamond_136
-    21300274: Diamond_137
-    21300276: Diamond_138
-    21300278: Diamond_139
-    21300280: Diamond_140
-    21300282: Diamond_141
-    21300284: Diamond_142
-    21300286: Diamond_143
-    21300288: Diamond_144
-    21300290: Diamond_145
-    21300292: Diamond_146
-    21300294: Diamond_147
-    21300296: Diamond_148
-    21300298: Diamond_149
-    21300300: Diamond_150
-    21300302: Diamond_151
-    21300304: Diamond_152
-    21300306: Diamond_153
-    21300308: Diamond_154
-    21300310: Diamond_155
-    21300312: Diamond_156
-    21300314: Diamond_157
-    21300316: Diamond_158
-    21300318: Diamond_159
-    21300320: Diamond_160
-    21300322: Diamond_161
-    21300324: Diamond_162
-    21300326: Diamond_163
-    21300328: Diamond_164
-    21300330: Diamond_165
-    21300332: Diamond_166
-    21300334: Diamond_167
-    21300336: Diamond_168
-    21300338: Diamond_169
-    21300340: Diamond_170
-    21300342: Diamond_171
-    21300344: Diamond_172
-    21300346: Diamond_173
-    21300348: Diamond_174
-    21300350: Diamond_175
-    21300352: Diamond_176
-    21300354: Diamond_177
-    21300356: Diamond_178
-    21300358: Diamond_179
-    21300360: Diamond_180
-    21300362: Diamond_181
-    21300364: Diamond_182
-    21300366: Diamond_183
-    21300368: Diamond_184
-    21300370: Diamond_185
-    21300372: Diamond_186
-    21300374: Diamond_187
-    21300376: Diamond_188
-    21300378: Diamond_189
-    21300380: Diamond_190
-    21300382: Diamond_191
-    21300384: Diamond_192
-    21300386: Diamond_193
-    21300388: Diamond_194
-    21300390: Diamond_195
-    21300392: Diamond_196
-    21300394: Diamond_197
-    21300396: Diamond_198
-    21300398: Diamond_199
-    21300400: Diamond_200
-    21300402: Diamond_201
-    21300404: Diamond_202
-    21300406: Diamond_203
-    21300408: Diamond_204
-    21300410: Diamond_205
-    21300412: Diamond_206
-    21300414: Diamond_207
-    21300416: Diamond_208
-    21300418: Diamond_209
-    21300420: Diamond_210
-    21300422: Diamond_211
-    21300424: Diamond_212
-    21300426: Diamond_213
-    21300428: Diamond_214
-    21300430: Diamond_215
-    21300432: Diamond_216
-    21300434: Diamond_217
-    21300436: Diamond_218
-    21300438: Diamond_219
-    21300440: Diamond_220
-    21300442: Diamond_221
-    21300444: Diamond_222
-    21300446: Diamond_223
-    21300448: Diamond_224
-    21300450: Diamond_225
-    21300452: Diamond_226
-    21300454: Diamond_227
-    21300456: Diamond_228
-    21300458: Diamond_229
-    21300460: Diamond_230
-    21300462: Diamond_231
-    21300464: Diamond_232
-    21300466: Diamond_233
-    21300468: Diamond_234
-    21300470: Diamond_235
-    21300472: Diamond_236
-    21300474: Diamond_237
-    21300476: Diamond_238
-    21300478: Diamond_239
-    21300480: Diamond_240
-    21300482: Diamond_241
-    21300484: Diamond_242
-    21300486: Diamond_243
-    21300488: Diamond_244
-    21300490: Diamond_245
-    21300492: Diamond_246
-    21300494: Diamond_247
-    21300496: Diamond_248
-    21300498: Diamond_249
-    21300500: Diamond_250
-    21300502: Diamond_251
-    21300504: Diamond_252
-    21300506: Diamond_253
-    21300508: Diamond_254
-    21300510: Diamond_255
-    21300512: Diamond_256
-    21300514: Diamond_257
-    21300516: Diamond_258
-    21300518: Diamond_259
-    21300520: Diamond_260
-    21300522: Diamond_261
-    21300524: Diamond_262
-    21300526: Diamond_263
-    21300528: Diamond_264
-    21300530: Diamond_265
-    21300532: Diamond_266
-    21300534: Diamond_267
-    21300536: Diamond_268
-    21300538: Diamond_269
-    21300540: Diamond_270
-    21300542: Diamond_271
-    21300544: Diamond_272
-    21300546: Diamond_273
-    21300548: Diamond_274
-    21300550: Diamond_275
-    21300552: Diamond_276
-    21300554: Diamond_277
-    21300556: Diamond_278
-    21300558: Diamond_279
-    21300560: Diamond_280
-    21300562: Diamond_281
-    21300564: Diamond_282
-    21300566: Diamond_283
-    21300568: Diamond_284
-    21300570: Diamond_285
-    21300572: Diamond_286
-    21300574: Diamond_287
-    21300576: Diamond_288
-    21300578: Diamond_289
-    21300580: Diamond_290
-    21300582: Diamond_291
-    21300584: Diamond_292
-    21300586: Diamond_293
-    21300588: Diamond_294
-    21300590: Diamond_295
-    21300592: Diamond_296
-    21300594: Diamond_297
-    21300596: Diamond_298
-    21300598: Diamond_299
-    21300600: Diamond_300
-    21300602: Diamond_301
-    21300604: Diamond_302
-    21300606: Diamond_303
-    21300608: Diamond_304
-    21300610: Diamond_305
-    21300612: Diamond_306
-    21300614: Diamond_307
-    21300616: Diamond_308
-    21300618: Diamond_309
-    21300620: Diamond_310
-    21300622: Diamond_311
-    21300624: Diamond_312
-    21300626: Diamond_313
-    21300628: Diamond_314
-    21300630: Diamond_315
-    21300632: Diamond_316
-    21300634: Diamond_317
-    21300636: Diamond_318
-    21300638: Diamond_319
-    21300640: Diamond_320
-    21300642: Diamond_321
-    21300644: Diamond_322
-    21300646: Diamond_323
-    21300648: Diamond_324
-    21300650: Diamond_325
-    21300652: Diamond_326
-    21300654: Diamond_327
-    21300656: Diamond_328
-    21300658: Diamond_329
-    21300660: Diamond_330
-    21300662: Diamond_331
-    21300664: Diamond_332
-    21300666: Diamond_333
-    21300668: Diamond_334
-    21300670: Diamond_335
-    21300672: Diamond_336
-    21300674: Diamond_337
-    21300676: Diamond_338
-    21300678: Diamond_339
-    21300680: Diamond_340
-    21300682: Diamond_341
-    21300684: Diamond_342
-    21300686: Diamond_343
-    21300688: Diamond_344
-    21300690: Diamond_345
-    21300692: Diamond_346
-    21300694: Diamond_347
-    21300696: Diamond_348
-    21300698: Diamond_349
-    21300700: Diamond_350
-    21300702: Diamond_351
-    21300704: Diamond_352
-    21300706: Diamond_353
-    21300708: Diamond_354
-    21300710: Diamond_355
-    21300712: Diamond_356
-    21300714: Diamond_357
-    21300716: Diamond_358
-    21300718: Diamond_359
-    21300720: Diamond_360
-    21300722: Diamond_361
-    21300724: Diamond_362
-    21300726: Diamond_363
-    21300728: Diamond_364
-    21300730: Diamond_365
-    21300732: Diamond_366
-    21300734: Diamond_367
-    21300736: Diamond_368
-    21300738: Diamond_369
-    21300740: Diamond_370
-    21300742: Diamond_371
-    21300744: Diamond_372
-    21300746: Diamond_373
-    21300748: Diamond_374
-    21300750: Diamond_375
-    21300752: Diamond_376
-    21300754: Diamond_377
-    21300756: Diamond_378
-    21300758: Diamond_379
-    21300760: Diamond_380
-    21300762: Diamond_381
-    21300764: Diamond_382
-    21300766: Diamond_383
-    21300768: Diamond_384
-    21300770: Diamond_385
-    21300772: Diamond_386
-    21300774: Diamond_387
-    21300776: Diamond_388
-    21300778: Diamond_389
-    21300780: Diamond_390
-    21300782: Diamond_391
-    21300784: Diamond_392
-    21300786: Diamond_393
-    21300788: Diamond_394
-    21300790: Diamond_395
-    21300792: Diamond_396
-    21300794: Diamond_397
-    21300796: Diamond_398
-    21300798: Diamond_399
-    21300800: Diamond_400
-    21300802: Diamond_401
-    21300804: Diamond_402
-    21300806: Diamond_403
-    21300808: Diamond_404
-    21300810: Diamond_405
-    21300812: Diamond_406
-    21300814: Diamond_407
-    21300816: Diamond_408
-    21300818: Diamond_409
-    21300820: Diamond_410
-    21300822: Diamond_411
-    21300824: Diamond_412
-    21300826: Diamond_413
-    21300828: Diamond_414
-    21300830: Diamond_415
-    21300832: Diamond_416
-    21300834: Diamond_417
-    21300836: Diamond_418
-    21300838: Diamond_419
-    21300840: Diamond_420
-    21300842: Diamond_421
-    21300844: Diamond_422
-    21300846: Diamond_423
-    21300848: Diamond_424
-    21300850: Diamond_425
-    21300852: Diamond_426
-    21300854: Diamond_427
-    21300856: Diamond_428
-    21300858: Diamond_429
-    21300860: Diamond_430
-    21300862: Diamond_431
-    21300864: Diamond_432
-    21300866: Diamond_433
-    21300868: Diamond_434
-    21300870: Diamond_435
-    21300872: Diamond_436
-    21300874: Diamond_437
-    21300876: Diamond_438
-    21300878: Diamond_439
-    21300880: Diamond_440
-    21300882: Diamond_441
-    21300884: Diamond_442
-    21300886: Diamond_443
-    21300888: Diamond_444
-    21300890: Diamond_445
-    21300892: Diamond_446
-    21300894: Diamond_447
-    21300896: Diamond_448
-    21300898: Diamond_449
-    21300900: Diamond_450
-    21300902: Diamond_451
-    21300904: Diamond_452
-    21300906: Diamond_453
-    21300908: Diamond_454
-    21300910: Diamond_455
-    21300912: Diamond_456
-    21300914: Diamond_457
-    21300916: Diamond_458
-    21300918: Diamond_459
-    21300920: Diamond_460
-    21300922: Diamond_461
-    21300924: Diamond_462
-    21300926: Diamond_463
-    21300928: Diamond_464
-    21300930: Diamond_465
-    21300932: Diamond_466
-    21300934: Diamond_467
-    21300936: Diamond_468
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Diamond_0
+  - first:
+      213: 21300002
+    second: Diamond_1
+  - first:
+      213: 21300004
+    second: Diamond_2
+  - first:
+      213: 21300006
+    second: Diamond_3
+  - first:
+      213: 21300008
+    second: Diamond_4
+  - first:
+      213: 21300010
+    second: Diamond_5
+  - first:
+      213: 21300012
+    second: Diamond_6
+  - first:
+      213: 21300014
+    second: Diamond_7
+  - first:
+      213: 21300016
+    second: Diamond_8
+  - first:
+      213: 21300018
+    second: Diamond_9
+  - first:
+      213: 21300020
+    second: Diamond_10
+  - first:
+      213: 21300022
+    second: Diamond_11
+  - first:
+      213: 21300024
+    second: Diamond_12
+  - first:
+      213: 21300026
+    second: Diamond_13
+  - first:
+      213: 21300028
+    second: Diamond_14
+  - first:
+      213: 21300030
+    second: Diamond_15
+  - first:
+      213: 21300032
+    second: Diamond_16
+  - first:
+      213: 21300034
+    second: Diamond_17
+  - first:
+      213: 21300036
+    second: Diamond_18
+  - first:
+      213: 21300038
+    second: Diamond_19
+  - first:
+      213: 21300040
+    second: Diamond_20
+  - first:
+      213: 21300042
+    second: Diamond_21
+  - first:
+      213: 21300044
+    second: Diamond_22
+  - first:
+      213: 21300046
+    second: Diamond_23
+  - first:
+      213: 21300048
+    second: Diamond_24
+  - first:
+      213: 21300050
+    second: Diamond_25
+  - first:
+      213: 21300052
+    second: Diamond_26
+  - first:
+      213: 21300054
+    second: Diamond_27
+  - first:
+      213: 21300056
+    second: Diamond_28
+  - first:
+      213: 21300058
+    second: Diamond_29
+  - first:
+      213: 21300060
+    second: Diamond_30
+  - first:
+      213: 21300062
+    second: Diamond_31
+  - first:
+      213: 21300064
+    second: Diamond_32
+  - first:
+      213: 21300066
+    second: Diamond_33
+  - first:
+      213: 21300068
+    second: Diamond_34
+  - first:
+      213: 21300070
+    second: Diamond_35
+  - first:
+      213: 21300072
+    second: Diamond_36
+  - first:
+      213: 21300074
+    second: Diamond_37
+  - first:
+      213: 21300076
+    second: Diamond_38
+  - first:
+      213: 21300078
+    second: Diamond_39
+  - first:
+      213: 21300080
+    second: Diamond_40
+  - first:
+      213: 21300082
+    second: Diamond_41
+  - first:
+      213: 21300084
+    second: Diamond_42
+  - first:
+      213: 21300086
+    second: Diamond_43
+  - first:
+      213: 21300088
+    second: Diamond_44
+  - first:
+      213: 21300090
+    second: Diamond_45
+  - first:
+      213: 21300092
+    second: Diamond_46
+  - first:
+      213: 21300094
+    second: Diamond_47
+  - first:
+      213: 21300096
+    second: Diamond_48
+  - first:
+      213: 21300098
+    second: Diamond_49
+  - first:
+      213: 21300100
+    second: Diamond_50
+  - first:
+      213: 21300102
+    second: Diamond_51
+  - first:
+      213: 21300104
+    second: Diamond_52
+  - first:
+      213: 21300106
+    second: Diamond_53
+  - first:
+      213: 21300108
+    second: Diamond_54
+  - first:
+      213: 21300110
+    second: Diamond_55
+  - first:
+      213: 21300112
+    second: Diamond_56
+  - first:
+      213: 21300114
+    second: Diamond_57
+  - first:
+      213: 21300116
+    second: Diamond_58
+  - first:
+      213: 21300118
+    second: Diamond_59
+  - first:
+      213: 21300120
+    second: Diamond_60
+  - first:
+      213: 21300122
+    second: Diamond_61
+  - first:
+      213: 21300124
+    second: Diamond_62
+  - first:
+      213: 21300126
+    second: Diamond_63
+  - first:
+      213: 21300128
+    second: Diamond_64
+  - first:
+      213: 21300130
+    second: Diamond_65
+  - first:
+      213: 21300132
+    second: Diamond_66
+  - first:
+      213: 21300134
+    second: Diamond_67
+  - first:
+      213: 21300136
+    second: Diamond_68
+  - first:
+      213: 21300138
+    second: Diamond_69
+  - first:
+      213: 21300140
+    second: Diamond_70
+  - first:
+      213: 21300142
+    second: Diamond_71
+  - first:
+      213: 21300144
+    second: Diamond_72
+  - first:
+      213: 21300146
+    second: Diamond_73
+  - first:
+      213: 21300148
+    second: Diamond_74
+  - first:
+      213: 21300150
+    second: Diamond_75
+  - first:
+      213: 21300152
+    second: Diamond_76
+  - first:
+      213: 21300154
+    second: Diamond_77
+  - first:
+      213: 21300156
+    second: Diamond_78
+  - first:
+      213: 21300158
+    second: Diamond_79
+  - first:
+      213: 21300160
+    second: Diamond_80
+  - first:
+      213: 21300162
+    second: Diamond_81
+  - first:
+      213: 21300164
+    second: Diamond_82
+  - first:
+      213: 21300166
+    second: Diamond_83
+  - first:
+      213: 21300168
+    second: Diamond_84
+  - first:
+      213: 21300170
+    second: Diamond_85
+  - first:
+      213: 21300172
+    second: Diamond_86
+  - first:
+      213: 21300174
+    second: Diamond_87
+  - first:
+      213: 21300176
+    second: Diamond_88
+  - first:
+      213: 21300178
+    second: Diamond_89
+  - first:
+      213: 21300180
+    second: Diamond_90
+  - first:
+      213: 21300182
+    second: Diamond_91
+  - first:
+      213: 21300184
+    second: Diamond_92
+  - first:
+      213: 21300186
+    second: Diamond_93
+  - first:
+      213: 21300188
+    second: Diamond_94
+  - first:
+      213: 21300190
+    second: Diamond_95
+  - first:
+      213: 21300192
+    second: Diamond_96
+  - first:
+      213: 21300194
+    second: Diamond_97
+  - first:
+      213: 21300196
+    second: Diamond_98
+  - first:
+      213: 21300198
+    second: Diamond_99
+  - first:
+      213: 21300200
+    second: Diamond_100
+  - first:
+      213: 21300202
+    second: Diamond_101
+  - first:
+      213: 21300204
+    second: Diamond_102
+  - first:
+      213: 21300206
+    second: Diamond_103
+  - first:
+      213: 21300208
+    second: Diamond_104
+  - first:
+      213: 21300210
+    second: Diamond_105
+  - first:
+      213: 21300212
+    second: Diamond_106
+  - first:
+      213: 21300214
+    second: Diamond_107
+  - first:
+      213: 21300216
+    second: Diamond_108
+  - first:
+      213: 21300218
+    second: Diamond_109
+  - first:
+      213: 21300220
+    second: Diamond_110
+  - first:
+      213: 21300222
+    second: Diamond_111
+  - first:
+      213: 21300224
+    second: Diamond_112
+  - first:
+      213: 21300226
+    second: Diamond_113
+  - first:
+      213: 21300228
+    second: Diamond_114
+  - first:
+      213: 21300230
+    second: Diamond_115
+  - first:
+      213: 21300232
+    second: Diamond_116
+  - first:
+      213: 21300234
+    second: Diamond_117
+  - first:
+      213: 21300236
+    second: Diamond_118
+  - first:
+      213: 21300238
+    second: Diamond_119
+  - first:
+      213: 21300240
+    second: Diamond_120
+  - first:
+      213: 21300242
+    second: Diamond_121
+  - first:
+      213: 21300244
+    second: Diamond_122
+  - first:
+      213: 21300246
+    second: Diamond_123
+  - first:
+      213: 21300248
+    second: Diamond_124
+  - first:
+      213: 21300250
+    second: Diamond_125
+  - first:
+      213: 21300252
+    second: Diamond_126
+  - first:
+      213: 21300254
+    second: Diamond_127
+  - first:
+      213: 21300256
+    second: Diamond_128
+  - first:
+      213: 21300258
+    second: Diamond_129
+  - first:
+      213: 21300260
+    second: Diamond_130
+  - first:
+      213: 21300262
+    second: Diamond_131
+  - first:
+      213: 21300264
+    second: Diamond_132
+  - first:
+      213: 21300266
+    second: Diamond_133
+  - first:
+      213: 21300268
+    second: Diamond_134
+  - first:
+      213: 21300270
+    second: Diamond_135
+  - first:
+      213: 21300272
+    second: Diamond_136
+  - first:
+      213: 21300274
+    second: Diamond_137
+  - first:
+      213: 21300276
+    second: Diamond_138
+  - first:
+      213: 21300278
+    second: Diamond_139
+  - first:
+      213: 21300280
+    second: Diamond_140
+  - first:
+      213: 21300282
+    second: Diamond_141
+  - first:
+      213: 21300284
+    second: Diamond_142
+  - first:
+      213: 21300286
+    second: Diamond_143
+  - first:
+      213: 21300288
+    second: Diamond_144
+  - first:
+      213: 21300290
+    second: Diamond_145
+  - first:
+      213: 21300292
+    second: Diamond_146
+  - first:
+      213: 21300294
+    second: Diamond_147
+  - first:
+      213: 21300296
+    second: Diamond_148
+  - first:
+      213: 21300298
+    second: Diamond_149
+  - first:
+      213: 21300300
+    second: Diamond_150
+  - first:
+      213: 21300302
+    second: Diamond_151
+  - first:
+      213: 21300304
+    second: Diamond_152
+  - first:
+      213: 21300306
+    second: Diamond_153
+  - first:
+      213: 21300308
+    second: Diamond_154
+  - first:
+      213: 21300310
+    second: Diamond_155
+  - first:
+      213: 21300312
+    second: Diamond_156
+  - first:
+      213: 21300314
+    second: Diamond_157
+  - first:
+      213: 21300316
+    second: Diamond_158
+  - first:
+      213: 21300318
+    second: Diamond_159
+  - first:
+      213: 21300320
+    second: Diamond_160
+  - first:
+      213: 21300322
+    second: Diamond_161
+  - first:
+      213: 21300324
+    second: Diamond_162
+  - first:
+      213: 21300326
+    second: Diamond_163
+  - first:
+      213: 21300328
+    second: Diamond_164
+  - first:
+      213: 21300330
+    second: Diamond_165
+  - first:
+      213: 21300332
+    second: Diamond_166
+  - first:
+      213: 21300334
+    second: Diamond_167
+  - first:
+      213: 21300336
+    second: Diamond_168
+  - first:
+      213: 21300338
+    second: Diamond_169
+  - first:
+      213: 21300340
+    second: Diamond_170
+  - first:
+      213: 21300342
+    second: Diamond_171
+  - first:
+      213: 21300344
+    second: Diamond_172
+  - first:
+      213: 21300346
+    second: Diamond_173
+  - first:
+      213: 21300348
+    second: Diamond_174
+  - first:
+      213: 21300350
+    second: Diamond_175
+  - first:
+      213: 21300352
+    second: Diamond_176
+  - first:
+      213: 21300354
+    second: Diamond_177
+  - first:
+      213: 21300356
+    second: Diamond_178
+  - first:
+      213: 21300358
+    second: Diamond_179
+  - first:
+      213: 21300360
+    second: Diamond_180
+  - first:
+      213: 21300362
+    second: Diamond_181
+  - first:
+      213: 21300364
+    second: Diamond_182
+  - first:
+      213: 21300366
+    second: Diamond_183
+  - first:
+      213: 21300368
+    second: Diamond_184
+  - first:
+      213: 21300370
+    second: Diamond_185
+  - first:
+      213: 21300372
+    second: Diamond_186
+  - first:
+      213: 21300374
+    second: Diamond_187
+  - first:
+      213: 21300376
+    second: Diamond_188
+  - first:
+      213: 21300378
+    second: Diamond_189
+  - first:
+      213: 21300380
+    second: Diamond_190
+  - first:
+      213: 21300382
+    second: Diamond_191
+  - first:
+      213: 21300384
+    second: Diamond_192
+  - first:
+      213: 21300386
+    second: Diamond_193
+  - first:
+      213: 21300388
+    second: Diamond_194
+  - first:
+      213: 21300390
+    second: Diamond_195
+  - first:
+      213: 21300392
+    second: Diamond_196
+  - first:
+      213: 21300394
+    second: Diamond_197
+  - first:
+      213: 21300396
+    second: Diamond_198
+  - first:
+      213: 21300398
+    second: Diamond_199
+  - first:
+      213: 21300400
+    second: Diamond_200
+  - first:
+      213: 21300402
+    second: Diamond_201
+  - first:
+      213: 21300404
+    second: Diamond_202
+  - first:
+      213: 21300406
+    second: Diamond_203
+  - first:
+      213: 21300408
+    second: Diamond_204
+  - first:
+      213: 21300410
+    second: Diamond_205
+  - first:
+      213: 21300412
+    second: Diamond_206
+  - first:
+      213: 21300414
+    second: Diamond_207
+  - first:
+      213: 21300416
+    second: Diamond_208
+  - first:
+      213: 21300418
+    second: Diamond_209
+  - first:
+      213: 21300420
+    second: Diamond_210
+  - first:
+      213: 21300422
+    second: Diamond_211
+  - first:
+      213: 21300424
+    second: Diamond_212
+  - first:
+      213: 21300426
+    second: Diamond_213
+  - first:
+      213: 21300428
+    second: Diamond_214
+  - first:
+      213: 21300430
+    second: Diamond_215
+  - first:
+      213: 21300432
+    second: Diamond_216
+  - first:
+      213: 21300434
+    second: Diamond_217
+  - first:
+      213: 21300436
+    second: Diamond_218
+  - first:
+      213: 21300438
+    second: Diamond_219
+  - first:
+      213: 21300440
+    second: Diamond_220
+  - first:
+      213: 21300442
+    second: Diamond_221
+  - first:
+      213: 21300444
+    second: Diamond_222
+  - first:
+      213: 21300446
+    second: Diamond_223
+  - first:
+      213: 21300448
+    second: Diamond_224
+  - first:
+      213: 21300450
+    second: Diamond_225
+  - first:
+      213: 21300452
+    second: Diamond_226
+  - first:
+      213: 21300454
+    second: Diamond_227
+  - first:
+      213: 21300456
+    second: Diamond_228
+  - first:
+      213: 21300458
+    second: Diamond_229
+  - first:
+      213: 21300460
+    second: Diamond_230
+  - first:
+      213: 21300462
+    second: Diamond_231
+  - first:
+      213: 21300464
+    second: Diamond_232
+  - first:
+      213: 21300466
+    second: Diamond_233
+  - first:
+      213: 21300468
+    second: Diamond_234
+  - first:
+      213: 21300470
+    second: Diamond_235
+  - first:
+      213: 21300472
+    second: Diamond_236
+  - first:
+      213: 21300474
+    second: Diamond_237
+  - first:
+      213: 21300476
+    second: Diamond_238
+  - first:
+      213: 21300478
+    second: Diamond_239
+  - first:
+      213: 21300480
+    second: Diamond_240
+  - first:
+      213: 21300482
+    second: Diamond_241
+  - first:
+      213: 21300484
+    second: Diamond_242
+  - first:
+      213: 21300486
+    second: Diamond_243
+  - first:
+      213: 21300488
+    second: Diamond_244
+  - first:
+      213: 21300490
+    second: Diamond_245
+  - first:
+      213: 21300492
+    second: Diamond_246
+  - first:
+      213: 21300494
+    second: Diamond_247
+  - first:
+      213: 21300496
+    second: Diamond_248
+  - first:
+      213: 21300498
+    second: Diamond_249
+  - first:
+      213: 21300500
+    second: Diamond_250
+  - first:
+      213: 21300502
+    second: Diamond_251
+  - first:
+      213: 21300504
+    second: Diamond_252
+  - first:
+      213: 21300506
+    second: Diamond_253
+  - first:
+      213: 21300508
+    second: Diamond_254
+  - first:
+      213: 21300510
+    second: Diamond_255
+  - first:
+      213: 21300512
+    second: Diamond_256
+  - first:
+      213: 21300514
+    second: Diamond_257
+  - first:
+      213: 21300516
+    second: Diamond_258
+  - first:
+      213: 21300518
+    second: Diamond_259
+  - first:
+      213: 21300520
+    second: Diamond_260
+  - first:
+      213: 21300522
+    second: Diamond_261
+  - first:
+      213: 21300524
+    second: Diamond_262
+  - first:
+      213: 21300526
+    second: Diamond_263
+  - first:
+      213: 21300528
+    second: Diamond_264
+  - first:
+      213: 21300530
+    second: Diamond_265
+  - first:
+      213: 21300532
+    second: Diamond_266
+  - first:
+      213: 21300534
+    second: Diamond_267
+  - first:
+      213: 21300536
+    second: Diamond_268
+  - first:
+      213: 21300538
+    second: Diamond_269
+  - first:
+      213: 21300540
+    second: Diamond_270
+  - first:
+      213: 21300542
+    second: Diamond_271
+  - first:
+      213: 21300544
+    second: Diamond_272
+  - first:
+      213: 21300546
+    second: Diamond_273
+  - first:
+      213: 21300548
+    second: Diamond_274
+  - first:
+      213: 21300550
+    second: Diamond_275
+  - first:
+      213: 21300552
+    second: Diamond_276
+  - first:
+      213: 21300554
+    second: Diamond_277
+  - first:
+      213: 21300556
+    second: Diamond_278
+  - first:
+      213: 21300558
+    second: Diamond_279
+  - first:
+      213: 21300560
+    second: Diamond_280
+  - first:
+      213: 21300562
+    second: Diamond_281
+  - first:
+      213: 21300564
+    second: Diamond_282
+  - first:
+      213: 21300566
+    second: Diamond_283
+  - first:
+      213: 21300568
+    second: Diamond_284
+  - first:
+      213: 21300570
+    second: Diamond_285
+  - first:
+      213: 21300572
+    second: Diamond_286
+  - first:
+      213: 21300574
+    second: Diamond_287
+  - first:
+      213: 21300576
+    second: Diamond_288
+  - first:
+      213: 21300578
+    second: Diamond_289
+  - first:
+      213: 21300580
+    second: Diamond_290
+  - first:
+      213: 21300582
+    second: Diamond_291
+  - first:
+      213: 21300584
+    second: Diamond_292
+  - first:
+      213: 21300586
+    second: Diamond_293
+  - first:
+      213: 21300588
+    second: Diamond_294
+  - first:
+      213: 21300590
+    second: Diamond_295
+  - first:
+      213: 21300592
+    second: Diamond_296
+  - first:
+      213: 21300594
+    second: Diamond_297
+  - first:
+      213: 21300596
+    second: Diamond_298
+  - first:
+      213: 21300598
+    second: Diamond_299
+  - first:
+      213: 21300600
+    second: Diamond_300
+  - first:
+      213: 21300602
+    second: Diamond_301
+  - first:
+      213: 21300604
+    second: Diamond_302
+  - first:
+      213: 21300606
+    second: Diamond_303
+  - first:
+      213: 21300608
+    second: Diamond_304
+  - first:
+      213: 21300610
+    second: Diamond_305
+  - first:
+      213: 21300612
+    second: Diamond_306
+  - first:
+      213: 21300614
+    second: Diamond_307
+  - first:
+      213: 21300616
+    second: Diamond_308
+  - first:
+      213: 21300618
+    second: Diamond_309
+  - first:
+      213: 21300620
+    second: Diamond_310
+  - first:
+      213: 21300622
+    second: Diamond_311
+  - first:
+      213: 21300624
+    second: Diamond_312
+  - first:
+      213: 21300626
+    second: Diamond_313
+  - first:
+      213: 21300628
+    second: Diamond_314
+  - first:
+      213: 21300630
+    second: Diamond_315
+  - first:
+      213: 21300632
+    second: Diamond_316
+  - first:
+      213: 21300634
+    second: Diamond_317
+  - first:
+      213: 21300636
+    second: Diamond_318
+  - first:
+      213: 21300638
+    second: Diamond_319
+  - first:
+      213: 21300640
+    second: Diamond_320
+  - first:
+      213: 21300642
+    second: Diamond_321
+  - first:
+      213: 21300644
+    second: Diamond_322
+  - first:
+      213: 21300646
+    second: Diamond_323
+  - first:
+      213: 21300648
+    second: Diamond_324
+  - first:
+      213: 21300650
+    second: Diamond_325
+  - first:
+      213: 21300652
+    second: Diamond_326
+  - first:
+      213: 21300654
+    second: Diamond_327
+  - first:
+      213: 21300656
+    second: Diamond_328
+  - first:
+      213: 21300658
+    second: Diamond_329
+  - first:
+      213: 21300660
+    second: Diamond_330
+  - first:
+      213: 21300662
+    second: Diamond_331
+  - first:
+      213: 21300664
+    second: Diamond_332
+  - first:
+      213: 21300666
+    second: Diamond_333
+  - first:
+      213: 21300668
+    second: Diamond_334
+  - first:
+      213: 21300670
+    second: Diamond_335
+  - first:
+      213: 21300672
+    second: Diamond_336
+  - first:
+      213: 21300674
+    second: Diamond_337
+  - first:
+      213: 21300676
+    second: Diamond_338
+  - first:
+      213: 21300678
+    second: Diamond_339
+  - first:
+      213: 21300680
+    second: Diamond_340
+  - first:
+      213: 21300682
+    second: Diamond_341
+  - first:
+      213: 21300684
+    second: Diamond_342
+  - first:
+      213: 21300686
+    second: Diamond_343
+  - first:
+      213: 21300688
+    second: Diamond_344
+  - first:
+      213: 21300690
+    second: Diamond_345
+  - first:
+      213: 21300692
+    second: Diamond_346
+  - first:
+      213: 21300694
+    second: Diamond_347
+  - first:
+      213: 21300696
+    second: Diamond_348
+  - first:
+      213: 21300698
+    second: Diamond_349
+  - first:
+      213: 21300700
+    second: Diamond_350
+  - first:
+      213: 21300702
+    second: Diamond_351
+  - first:
+      213: 21300704
+    second: Diamond_352
+  - first:
+      213: 21300706
+    second: Diamond_353
+  - first:
+      213: 21300708
+    second: Diamond_354
+  - first:
+      213: 21300710
+    second: Diamond_355
+  - first:
+      213: 21300712
+    second: Diamond_356
+  - first:
+      213: 21300714
+    second: Diamond_357
+  - first:
+      213: 21300716
+    second: Diamond_358
+  - first:
+      213: 21300718
+    second: Diamond_359
+  - first:
+      213: 21300720
+    second: Diamond_360
+  - first:
+      213: 21300722
+    second: Diamond_361
+  - first:
+      213: 21300724
+    second: Diamond_362
+  - first:
+      213: 21300726
+    second: Diamond_363
+  - first:
+      213: 21300728
+    second: Diamond_364
+  - first:
+      213: 21300730
+    second: Diamond_365
+  - first:
+      213: 21300732
+    second: Diamond_366
+  - first:
+      213: 21300734
+    second: Diamond_367
+  - first:
+      213: 21300736
+    second: Diamond_368
+  - first:
+      213: 21300738
+    second: Diamond_369
+  - first:
+      213: 21300740
+    second: Diamond_370
+  - first:
+      213: 21300742
+    second: Diamond_371
+  - first:
+      213: 21300744
+    second: Diamond_372
+  - first:
+      213: 21300746
+    second: Diamond_373
+  - first:
+      213: 21300748
+    second: Diamond_374
+  - first:
+      213: 21300750
+    second: Diamond_375
+  - first:
+      213: 21300752
+    second: Diamond_376
+  - first:
+      213: 21300754
+    second: Diamond_377
+  - first:
+      213: 21300756
+    second: Diamond_378
+  - first:
+      213: 21300758
+    second: Diamond_379
+  - first:
+      213: 21300760
+    second: Diamond_380
+  - first:
+      213: 21300762
+    second: Diamond_381
+  - first:
+      213: 21300764
+    second: Diamond_382
+  - first:
+      213: 21300766
+    second: Diamond_383
+  - first:
+      213: 21300768
+    second: Diamond_384
+  - first:
+      213: 21300770
+    second: Diamond_385
+  - first:
+      213: 21300772
+    second: Diamond_386
+  - first:
+      213: 21300774
+    second: Diamond_387
+  - first:
+      213: 21300776
+    second: Diamond_388
+  - first:
+      213: 21300778
+    second: Diamond_389
+  - first:
+      213: 21300780
+    second: Diamond_390
+  - first:
+      213: 21300782
+    second: Diamond_391
+  - first:
+      213: 21300784
+    second: Diamond_392
+  - first:
+      213: 21300786
+    second: Diamond_393
+  - first:
+      213: 21300788
+    second: Diamond_394
+  - first:
+      213: 21300790
+    second: Diamond_395
+  - first:
+      213: 21300792
+    second: Diamond_396
+  - first:
+      213: 21300794
+    second: Diamond_397
+  - first:
+      213: 21300796
+    second: Diamond_398
+  - first:
+      213: 21300798
+    second: Diamond_399
+  - first:
+      213: 21300800
+    second: Diamond_400
+  - first:
+      213: 21300802
+    second: Diamond_401
+  - first:
+      213: 21300804
+    second: Diamond_402
+  - first:
+      213: 21300806
+    second: Diamond_403
+  - first:
+      213: 21300808
+    second: Diamond_404
+  - first:
+      213: 21300810
+    second: Diamond_405
+  - first:
+      213: 21300812
+    second: Diamond_406
+  - first:
+      213: 21300814
+    second: Diamond_407
+  - first:
+      213: 21300816
+    second: Diamond_408
+  - first:
+      213: 21300818
+    second: Diamond_409
+  - first:
+      213: 21300820
+    second: Diamond_410
+  - first:
+      213: 21300822
+    second: Diamond_411
+  - first:
+      213: 21300824
+    second: Diamond_412
+  - first:
+      213: 21300826
+    second: Diamond_413
+  - first:
+      213: 21300828
+    second: Diamond_414
+  - first:
+      213: 21300830
+    second: Diamond_415
+  - first:
+      213: 21300832
+    second: Diamond_416
+  - first:
+      213: 21300834
+    second: Diamond_417
+  - first:
+      213: 21300836
+    second: Diamond_418
+  - first:
+      213: 21300838
+    second: Diamond_419
+  - first:
+      213: 21300840
+    second: Diamond_420
+  - first:
+      213: 21300842
+    second: Diamond_421
+  - first:
+      213: 21300844
+    second: Diamond_422
+  - first:
+      213: 21300846
+    second: Diamond_423
+  - first:
+      213: 21300848
+    second: Diamond_424
+  - first:
+      213: 21300850
+    second: Diamond_425
+  - first:
+      213: 21300852
+    second: Diamond_426
+  - first:
+      213: 21300854
+    second: Diamond_427
+  - first:
+      213: 21300856
+    second: Diamond_428
+  - first:
+      213: 21300858
+    second: Diamond_429
+  - first:
+      213: 21300860
+    second: Diamond_430
+  - first:
+      213: 21300862
+    second: Diamond_431
+  - first:
+      213: 21300864
+    second: Diamond_432
+  - first:
+      213: 21300866
+    second: Diamond_433
+  - first:
+      213: 21300868
+    second: Diamond_434
+  - first:
+      213: 21300870
+    second: Diamond_435
+  - first:
+      213: 21300872
+    second: Diamond_436
+  - first:
+      213: 21300874
+    second: Diamond_437
+  - first:
+      213: 21300876
+    second: Diamond_438
+  - first:
+      213: 21300878
+    second: Diamond_439
+  - first:
+      213: 21300880
+    second: Diamond_440
+  - first:
+      213: 21300882
+    second: Diamond_441
+  - first:
+      213: 21300884
+    second: Diamond_442
+  - first:
+      213: 21300886
+    second: Diamond_443
+  - first:
+      213: 21300888
+    second: Diamond_444
+  - first:
+      213: 21300890
+    second: Diamond_445
+  - first:
+      213: 21300892
+    second: Diamond_446
+  - first:
+      213: 21300894
+    second: Diamond_447
+  - first:
+      213: 21300896
+    second: Diamond_448
+  - first:
+      213: 21300898
+    second: Diamond_449
+  - first:
+      213: 21300900
+    second: Diamond_450
+  - first:
+      213: 21300902
+    second: Diamond_451
+  - first:
+      213: 21300904
+    second: Diamond_452
+  - first:
+      213: 21300906
+    second: Diamond_453
+  - first:
+      213: 21300908
+    second: Diamond_454
+  - first:
+      213: 21300910
+    second: Diamond_455
+  - first:
+      213: 21300912
+    second: Diamond_456
+  - first:
+      213: 21300914
+    second: Diamond_457
+  - first:
+      213: 21300916
+    second: Diamond_458
+  - first:
+      213: 21300918
+    second: Diamond_459
+  - first:
+      213: 21300920
+    second: Diamond_460
+  - first:
+      213: 21300922
+    second: Diamond_461
+  - first:
+      213: 21300924
+    second: Diamond_462
+  - first:
+      213: 21300926
+    second: Diamond_463
+  - first:
+      213: 21300928
+    second: Diamond_464
+  - first:
+      213: 21300930
+    second: Diamond_465
+  - first:
+      213: 21300932
+    second: Diamond_466
+  - first:
+      213: 21300934
+    second: Diamond_467
+  - first:
+      213: 21300936
+    second: Diamond_468
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -490,6 +1428,10 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -498,9 +1440,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -1
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -521,11 +1463,16 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -536,7 +1483,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -547,7 +1495,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -558,7 +1507,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -569,7 +1519,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -580,6 +1531,31 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -599,6 +1575,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c03a0e342f59e2f4e8260c087fc5d06b
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -619,6 +1596,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e24fa815c6e537b40809fe2305e7836c
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -639,6 +1617,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1abc7b6e72d967949a3b0f3e809eb299
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -659,6 +1638,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 79b0e132abd285d41ab33f8a664c7eca
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -679,6 +1659,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 675bfb6f05d30a64792258092fbcb059
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -699,6 +1680,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 00074feb4227985418d2df6564fb02da
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -719,6 +1701,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: eb4cb052378950f41a0e3240b2cca9a9
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -739,6 +1722,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b8edd6f55edca3c42b262466fb63456d
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -759,6 +1743,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2b4e28260bfd9df49b95395ebb491fc5
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -779,6 +1764,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: cb3b6afc8fa3ab24e92b818bda9e5d14
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -799,6 +1785,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e5d517471f96f47478a0329e116cbb17
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -819,6 +1806,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 916e45cc063d2fc4aae59ea164558b8f
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -839,6 +1827,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 988442268c0c1b741aa15360beb678e1
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -859,6 +1848,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6a4f5529e57de3d4689d6d3c1265dd11
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -879,6 +1869,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9b95add4dce45674187c18cb61a4c57a
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -899,6 +1890,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 778a4ecd3cdfae44db3b17b4d41a3ffb
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -919,6 +1911,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e3e804b55a968884ca1a9b61c586f63a
+      internalID: 21300032
       vertices: []
       indices: 
       edges: []
@@ -939,6 +1932,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 281b646653defb04396b50676811b241
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -959,6 +1953,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5f3bcde02479d654183a9a2f3c89264b
+      internalID: 21300036
       vertices: []
       indices: 
       edges: []
@@ -979,6 +1974,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d6a135b93dde50448abee7796c9bc1fb
+      internalID: 21300038
       vertices: []
       indices: 
       edges: []
@@ -999,6 +1995,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 011fb2bdd0bc6914193a8359a673b1f7
+      internalID: 21300040
       vertices: []
       indices: 
       edges: []
@@ -1019,6 +2016,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6512da82d662b8c4c814949c909d147d
+      internalID: 21300042
       vertices: []
       indices: 
       edges: []
@@ -1039,6 +2037,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1abd23fdd2cea534589761ad71880061
+      internalID: 21300044
       vertices: []
       indices: 
       edges: []
@@ -1059,6 +2058,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c178719f62a8b7d43b815b2c9e06dcc3
+      internalID: 21300046
       vertices: []
       indices: 
       edges: []
@@ -1079,6 +2079,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d27fad7625037384097d16082a5e0d93
+      internalID: 21300048
       vertices: []
       indices: 
       edges: []
@@ -1099,6 +2100,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4eda7c812125c4d4ca5e7e52afa3d1ce
+      internalID: 21300050
       vertices: []
       indices: 
       edges: []
@@ -1119,6 +2121,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 472b45e528f8b48498eb97134315e9dc
+      internalID: 21300052
       vertices: []
       indices: 
       edges: []
@@ -1139,6 +2142,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 53548db66991411409a697f175c92415
+      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -1159,6 +2163,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b72ea8b7cde7ead47b0e538ac621b064
+      internalID: 21300056
       vertices: []
       indices: 
       edges: []
@@ -1179,6 +2184,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 66660a664d26c2742911690c3ee8308c
+      internalID: 21300058
       vertices: []
       indices: 
       edges: []
@@ -1187,11 +2193,46 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 31ac2b5e1eb36504e99447df12160dd1
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Diamond_0: 21300000
+      Diamond_1: 21300002
+      Diamond_10: 21300020
+      Diamond_11: 21300022
+      Diamond_12: 21300024
+      Diamond_13: 21300026
+      Diamond_14: 21300028
+      Diamond_15: 21300030
+      Diamond_16: 21300032
+      Diamond_17: 21300034
+      Diamond_18: 21300036
+      Diamond_19: 21300038
+      Diamond_2: 21300004
+      Diamond_20: 21300040
+      Diamond_21: 21300042
+      Diamond_22: 21300044
+      Diamond_23: 21300046
+      Diamond_24: 21300048
+      Diamond_25: 21300050
+      Diamond_26: 21300052
+      Diamond_27: 21300054
+      Diamond_28: 21300056
+      Diamond_29: 21300058
+      Diamond_3: 21300006
+      Diamond_4: 21300008
+      Diamond_5: 21300010
+      Diamond_6: 21300012
+      Diamond_7: 21300014
+      Diamond_8: 21300016
+      Diamond_9: 21300018
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

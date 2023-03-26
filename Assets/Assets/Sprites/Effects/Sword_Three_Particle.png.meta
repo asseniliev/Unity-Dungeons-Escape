@@ -1,31 +1,75 @@
 fileFormatVersion: 2
 guid: a06b610e33055354ca5a2720be5bd72c
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Sword_Three_Particle_0
-    21300002: Sword_Three_Particle_1
-    21300004: Sword_Three_Particle_2
-    21300006: Sword_Three_Particle_3
-    21300008: Sword_Three_Particle_4
-    21300010: Sword_Three_Particle_5
-    21300012: Sword_Three_Particle_6
-    21300014: Sword_Three_Particle_7
-    21300016: Sword_Three_Particle_8
-    21300018: Sword_Three_Particle_9
-    21300020: Sword_Three_Particle_10
-    21300022: Sword_Three_Particle_11
-    21300024: Sword_Three_Particle_12
-    21300026: Sword_Three_Particle_13
-    21300028: Sword_Three_Particle_14
-    21300030: Sword_Three_Particle_15
-    21300032: Sword_Three_Particle_16
-    21300034: Sword_Three_Particle_17
-    21300036: Sword_Three_Particle_18
-    21300038: Sword_Three_Particle_19
-    21300040: Sword_Three_Particle_20
-    21300042: Sword_Three_Particle_21
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Sword_Three_Particle_0
+  - first:
+      213: 21300002
+    second: Sword_Three_Particle_1
+  - first:
+      213: 21300004
+    second: Sword_Three_Particle_2
+  - first:
+      213: 21300006
+    second: Sword_Three_Particle_3
+  - first:
+      213: 21300008
+    second: Sword_Three_Particle_4
+  - first:
+      213: 21300010
+    second: Sword_Three_Particle_5
+  - first:
+      213: 21300012
+    second: Sword_Three_Particle_6
+  - first:
+      213: 21300014
+    second: Sword_Three_Particle_7
+  - first:
+      213: 21300016
+    second: Sword_Three_Particle_8
+  - first:
+      213: 21300018
+    second: Sword_Three_Particle_9
+  - first:
+      213: 21300020
+    second: Sword_Three_Particle_10
+  - first:
+      213: 21300022
+    second: Sword_Three_Particle_11
+  - first:
+      213: 21300024
+    second: Sword_Three_Particle_12
+  - first:
+      213: 21300026
+    second: Sword_Three_Particle_13
+  - first:
+      213: 21300028
+    second: Sword_Three_Particle_14
+  - first:
+      213: 21300030
+    second: Sword_Three_Particle_15
+  - first:
+      213: 21300032
+    second: Sword_Three_Particle_16
+  - first:
+      213: 21300034
+    second: Sword_Three_Particle_17
+  - first:
+      213: 21300036
+    second: Sword_Three_Particle_18
+  - first:
+      213: 21300038
+    second: Sword_Three_Particle_19
+  - first:
+      213: 21300040
+    second: Sword_Three_Particle_20
+  - first:
+      213: 21300042
+    second: Sword_Three_Particle_21
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -43,6 +87,10 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -51,9 +99,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -1
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -74,11 +122,16 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -89,7 +142,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -100,7 +154,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -111,7 +166,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -122,6 +178,43 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -141,6 +234,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2b36ba0f9476b3848ad4d0bfce3211f8
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -161,6 +255,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9deb6071d76d5ac429f80445d55d7b19
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -181,6 +276,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 4c62d347ea0ddc745ba0dc9739075a14
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -201,6 +297,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ed95c361641dfca4d8f835d93d6c8b2b
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -221,6 +318,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b9650e8a077155741b83a5771fc9ea04
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -241,6 +339,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d92d5ace7e425bf46ad7c3eed990a8ed
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -261,6 +360,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 064f285c2bba2b14f9cbfc374d9e327f
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -281,6 +381,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: aee5457fe69f9e24e8e6aca6cd51a760
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -289,11 +390,24 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: e74df8b92915633489536696127c4cfb
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sword_Three_Particle_0: 21300000
+      Sword_Three_Particle_1: 21300002
+      Sword_Three_Particle_2: 21300004
+      Sword_Three_Particle_3: 21300006
+      Sword_Three_Particle_4: 21300008
+      Sword_Three_Particle_5: 21300010
+      Sword_Three_Particle_6: 21300012
+      Sword_Three_Particle_7: 21300014
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
