@@ -8,17 +8,17 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     //get handle to rigidbody
     private Rigidbody2D rigidBody;
-    private string horizontalAxis = "Horizontal";
-    private float playerSpeed = 2;
-    private float jumpForce = 5f;
-    private float groundDistance = 0.04f;  //Min 0.04
+    private readonly string horizontalAxis = "Horizontal";    
+    float distanceToFloorWhenGrounder;
 
-    Vector3 rayCastOffset;
+    [SerializeField] private float jumpForce = 5f;
+    [SerializeField] private float playerSpeed = 2;
+    [SerializeField] LayerMask floorLayer;
 
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        rayCastOffset = new Vector3(0, (GetComponent<BoxCollider2D>().size.y + groundDistance ) / 2 , 0);
+        distanceToFloorWhenGrounder = MeasureDistanceToFloor();
     }
 
     // Update is called once per frame
@@ -36,20 +36,31 @@ public class Player : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded())
-        {
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())        {
+            
             rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         }
     }
 
-    private bool isGrounded()
+    private bool IsGrounded()
     {
-        Vector2 origin = this.transform.position - rayCastOffset;
-        RaycastHit2D hit = Physics2D.Raycast(origin, -Vector2.up, groundDistance);
-        if(hit.collider != null && hit.collider.name == "Floor") 
-            return true;
-
-        return false;
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, distanceToFloorWhenGrounder * 10, floorLayer);
         
+        if (hit.collider == null) 
+            return false;
+
+        float currentDistanceToFloor = Mathf.Abs(this.transform.position.y - hit.collider.transform.position.y);
+
+        if (currentDistanceToFloor > distanceToFloorWhenGrounder) 
+            return false;
+        
+        return true;
+        
+    }
+
+    private float MeasureDistanceToFloor()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 10.0f, floorLayer);
+        return (this.transform.position.y - hit.collider.transform.position.y);
     }
 }
