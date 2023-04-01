@@ -9,9 +9,6 @@ public class Player : MonoBehaviour
     //get handle to rigidbody
     private Rigidbody2D rigidBody;
     private readonly string horizontalAxis = "Horizontal";    
-    private float distanceToFloorWhenGrounder;
-    private float distanceFactor = 1.05f;
-    private bool isGrounded = true;
 
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float playerSpeed = 2;
@@ -19,8 +16,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();
-        distanceToFloorWhenGrounder = MeasureDistanceToFloor();
+        this.rigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -30,63 +26,21 @@ public class Player : MonoBehaviour
         Jump();
     }
 
-    private void FixedUpdate()
-    {
-        if (!isGrounded)
-        {
-            isGrounded = getGroundedStatus();
-        }
-    }
-
     private void Move()
     {
         float input = Input.GetAxisRaw(horizontalAxis);
-        if(isGrounded)
+        if(Mathf.Abs(this.rigidBody.velocity.y) < 10E-5)
         {
-            rigidBody.velocity = new Vector2(input * playerSpeed, rigidBody.velocity.y);
+            this.rigidBody.velocity = new Vector2(input * playerSpeed, this.rigidBody.velocity.y);
         }  
     }
 
     private void Jump()
     {
-
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)        
+        //In the check below rigidBody.velocity.y is very small only if the player is not in the air
+        if (Input.GetKeyDown(KeyCode.Space) && Mathf.Abs(this.rigidBody.velocity.y) < 10E-5)        
         {
-            rigidBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            StartCoroutine(SetIsGroundedFalse());
+            this.rigidBody.AddForce(new Vector2(0f, this.jumpForce), ForceMode2D.Impulse);
         }
-    }
-
-    private bool getGroundedStatus()
-    {
-        Debug.Log("Check if grounded");
-        
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, distanceToFloorWhenGrounder * distanceFactor, floorLayer);
-        
-        if (hit.collider == null)        {
-            
-            return false;
-        }   
-
-        float currentDistanceToFloor = Mathf.Abs(this.transform.position.y - hit.collider.transform.position.y);
-
-        if (currentDistanceToFloor > distanceToFloorWhenGrounder * distanceFactor)
-        {            
-            return false;
-        }
-
-        return true;        
-    }
-
-    private float MeasureDistanceToFloor()
-    {
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 10.0f, floorLayer);
-        return (this.transform.position.y - hit.collider.transform.position.y);
-    }
-
-    IEnumerator SetIsGroundedFalse()
-    {
-        yield return new WaitForSeconds(0.06f);
-        isGrounded = false;
     }
 }
