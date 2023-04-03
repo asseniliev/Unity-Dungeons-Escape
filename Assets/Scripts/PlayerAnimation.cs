@@ -13,6 +13,6 @@ public class PlayerAnimation : MonoBehaviour
 
     public void Move(float moveSpeed)
     {
-        animator.SetFloat("move", moveSpeed);
+        animator.SetFloat("move", Mathf.Abs(moveSpeed));
     }
 }

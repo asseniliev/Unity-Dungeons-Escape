@@ -15,14 +15,16 @@ public class Player : MonoBehaviour
     private float distanceToGroundWhenGrounded;
     private float distanceToGroundTolerance = 1.05f;
     private bool isGrounded;
-    private PlayerAnimation playerAnimation;    
+    private PlayerAnimation playerAnimation;
+    private GameObject spriteChild;
 
     void Start()
     {
         this.rigidBody = GetComponent<Rigidbody2D>();
-        this.distanceToGroundWhenGrounded = getDistanceToGround() * distanceToGroundTolerance;
+        this.distanceToGroundWhenGrounded = GetDistanceToGround() * distanceToGroundTolerance;
         this.isGrounded = true;
         playerAnimation = this.GetComponent<PlayerAnimation>();
+        spriteChild = this.GetComponentInChildren<Animator>().gameObject;
     }
 
     // Update is called once per frame
@@ -38,7 +40,7 @@ public class Player : MonoBehaviour
         if(isGrounded)
         {
             this.rigidBody.velocity = new Vector2(input * playerSpeed, this.rigidBody.velocity.y);
-            playerAnimation.Move(Mathf.Abs(this.rigidBody.velocity.x));
+            playerAnimation.Move(this.rigidBody.velocity.x);
             SetPlayerRotation(this.rigidBody.velocity.x);
         }  
     }
@@ -54,7 +56,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private float getDistanceToGround()
+    private float GetDistanceToGround()
     {
         RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 10f, floorLayer);        
         return hit.distance;        
@@ -64,7 +66,7 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(0.06f);
 
-        while (getDistanceToGround() > distanceToGroundWhenGrounded)
+        while (GetDistanceToGround() > distanceToGroundWhenGrounded)
         {
             yield return new WaitForSeconds(0.05f);
         }
@@ -78,6 +80,6 @@ public class Player : MonoBehaviour
         if(xSpeed > 0) playerRotation = 0;
         if (xSpeed < 0) playerRotation = 180;
 
-        this.transform.eulerAngles = new Vector3(this.transform.rotation.x, playerRotation, this.transform.rotation.z);
+        spriteChild.transform.eulerAngles = new Vector3(this.transform.rotation.x, playerRotation, this.transform.rotation.z);
     }
 }
