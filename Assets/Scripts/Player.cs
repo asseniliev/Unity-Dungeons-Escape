@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+[RequireComponent(typeof(PlayerAnimation))]
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    //get handle to rigidbody
+    [SerializeField] private float jumpForce = 5f;
+    [SerializeField] private float playerSpeed = 2;
+    [SerializeField] LayerMask floorLayer;
+
     private Rigidbody2D rigidBody;
     private readonly string horizontalAxis = "Horizontal";
     private float distanceToGroundWhenGrounded;
     private float distanceToGroundTolerance = 1.05f;
     private bool isGrounded;
-
-    [SerializeField] private float jumpForce = 5f;
-    [SerializeField] private float playerSpeed = 2;
-    [SerializeField] LayerMask floorLayer;
+    private PlayerAnimation playerAnimation;    
 
     void Start()
     {
         this.rigidBody = GetComponent<Rigidbody2D>();
         this.distanceToGroundWhenGrounded = getDistanceToGround() * distanceToGroundTolerance;
         this.isGrounded = true;
+        playerAnimation = this.GetComponent<PlayerAnimation>();
     }
 
     // Update is called once per frame
@@ -37,6 +38,8 @@ public class Player : MonoBehaviour
         if(isGrounded)
         {
             this.rigidBody.velocity = new Vector2(input * playerSpeed, this.rigidBody.velocity.y);
+            playerAnimation.Move(Mathf.Abs(this.rigidBody.velocity.x));
+            SetPlayerRotation(this.rigidBody.velocity.x);
         }  
     }
 
@@ -69,5 +72,12 @@ public class Player : MonoBehaviour
         isGrounded = true;
     }
 
-    
+    private void SetPlayerRotation(float xSpeed)
+    {
+        float playerRotation = this.transform.eulerAngles.y;        
+        if(xSpeed > 0) playerRotation = 0;
+        if (xSpeed < 0) playerRotation = 180;
+
+        this.transform.eulerAngles = new Vector3(this.transform.rotation.x, playerRotation, this.transform.rotation.z);
+    }
 }
