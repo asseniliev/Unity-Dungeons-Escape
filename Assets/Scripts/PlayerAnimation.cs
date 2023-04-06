@@ -15,4 +15,14 @@ public class PlayerAnimation : MonoBehaviour
     {
         animator.SetFloat("move", Mathf.Abs(moveSpeed));
     }
+
+    public void Jump()
+    {
+        animator.SetBool("isJumping", true);
+    }
+
+    public void Land()
+    {
+        animator.SetBool("isJumping", false);
+    }
 }

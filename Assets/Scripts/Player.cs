@@ -51,7 +51,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             isGrounded = false;
-            this.rigidBody.AddForce(new Vector2(0f, this.jumpForce), ForceMode2D.Impulse);            
+            this.rigidBody.AddForce(new Vector2(0f, this.jumpForce), ForceMode2D.Impulse);
+            playerAnimation.Jump();
             StartCoroutine(UpdateJumpStatus());
         }
     }
@@ -72,6 +73,7 @@ public class Player : MonoBehaviour
         }
 
         isGrounded = true;
+        playerAnimation.Land();
     }
 
     private void SetPlayerRotation(float xSpeed)
