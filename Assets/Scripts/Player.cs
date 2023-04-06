@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
         {
             isGrounded = false;
             this.rigidBody.AddForce(new Vector2(0f, this.jumpForce), ForceMode2D.Impulse);
-            playerAnimation.Jump();
+            playerAnimation.SetJumpAnimation(isJumping: true);
             StartCoroutine(UpdateJumpStatus());
         }
     }
@@ -73,7 +73,7 @@ public class Player : MonoBehaviour
         }
 
         isGrounded = true;
-        playerAnimation.Land();
+        playerAnimation.SetJumpAnimation(isJumping : false);
     }
 
     private void SetPlayerRotation(float xSpeed)
