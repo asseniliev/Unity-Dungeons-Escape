@@ -15,16 +15,23 @@ public class Player : MonoBehaviour
     private float distanceToGroundWhenGrounded;
     private float distanceToGroundTolerance = 1.05f;
     private bool isGrounded;
+    private bool isAttacking;
     private PlayerAnimation playerAnimation;
     private SpriteRenderer playerSprite;
+    private float regAttackAnimLen;
+    
 
     void Start()
     {
         this.rigidBody = GetComponent<Rigidbody2D>();
         this.distanceToGroundWhenGrounded = GetDistanceToGround() * distanceToGroundTolerance;
         this.isGrounded = true;
-        playerAnimation = this.GetComponent<PlayerAnimation>();
+        this.isAttacking = false;
+        playerAnimation = this.GetComponent<PlayerAnimation>();        
         playerSprite = this.GetComponentInChildren<SpriteRenderer>();
+        regAttackAnimLen = this.GetComponentInChildren<Animator>().runtimeAnimatorController.animationClips.FirstOrDefault(clip => clip.name == "Attack")?.length ?? 0;
+        Debug.Log(regAttackAnimLen);
+        
     }
 
     // Update is called once per frame
@@ -38,7 +45,7 @@ public class Player : MonoBehaviour
     private void Move()
     {
         float input = Input.GetAxisRaw(horizontalAxis);
-        if(isGrounded)
+        if(isGrounded & !isAttacking)
         {
             this.rigidBody.velocity = new Vector2(input * playerSpeed, this.rigidBody.velocity.y);
             playerAnimation.Move(this.rigidBody.velocity.x);
@@ -86,9 +93,18 @@ public class Player : MonoBehaviour
 
     private void RegAttack()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(Input.GetKeyDown(KeyCode.Mouse0) && isGrounded)
         {
             playerAnimation.RegAttack();
+            StartCoroutine(AttackMode());
         }
+    }
+
+    IEnumerator AttackMode()
+    {
+        isAttacking = true;
+        this.rigidBody.velocity = new Vector2(0, this.rigidBody.velocity.y);
+        yield return new WaitForSeconds(regAttackAnimLen);
+        isAttacking = false;
     }
 }
