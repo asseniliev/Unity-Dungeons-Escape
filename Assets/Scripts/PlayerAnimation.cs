@@ -21,5 +21,10 @@ public class PlayerAnimation : MonoBehaviour
         animator.SetBool("isJumping", isJumping);
     }
 
+    public void RegAttack()
+    {
+        animator.SetTrigger("attack");
+    }
+
     
 }

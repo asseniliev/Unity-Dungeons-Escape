@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     private float distanceToGroundTolerance = 1.05f;
     private bool isGrounded;
     private PlayerAnimation playerAnimation;
-    private GameObject spriteChild;
+    private SpriteRenderer playerSprite;
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
         this.distanceToGroundWhenGrounded = GetDistanceToGround() * distanceToGroundTolerance;
         this.isGrounded = true;
         playerAnimation = this.GetComponent<PlayerAnimation>();
-        spriteChild = this.GetComponentInChildren<Animator>().gameObject;
+        playerSprite = this.GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
+        RegAttack();
     }
 
     private void Move()
@@ -78,10 +79,16 @@ public class Player : MonoBehaviour
 
     private void SetPlayerRotation(float xSpeed)
     {
-        float playerRotation = this.transform.eulerAngles.y;        
-        if(xSpeed > 0) playerRotation = 0;
-        if (xSpeed < 0) playerRotation = 180;
+        if (xSpeed > 0) playerSprite.flipX = false;
+        if (xSpeed < 0) playerSprite.flipX = true;
 
-        spriteChild.transform.eulerAngles = new Vector3(this.transform.rotation.x, playerRotation, this.transform.rotation.z);
+    }
+
+    private void RegAttack()
+    {
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            playerAnimation.RegAttack();
+        }
     }
 }
