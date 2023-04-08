@@ -1,29 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class PlayerAnimation : MonoBehaviour
 {
-    private Animator animator;
+    [SerializeField] private Animator playerAnimator;
+    [SerializeField] private Animator swardAnimator;
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponentInChildren<Animator>();
+        
     }
 
     public void Move(float moveSpeed)
     {
-        animator.SetFloat("move", Mathf.Abs(moveSpeed));
+        playerAnimator.SetFloat("move", Mathf.Abs(moveSpeed));
     }
 
     public void SetJumpAnimation(bool isJumping)
     {
-        animator.SetBool("isJumping", isJumping);
+        playerAnimator.SetBool("isJumping", isJumping);
     }
 
     public void RegAttack()
     {
-        animator.SetTrigger("attack");
+        playerAnimator.SetTrigger("attack");
+        swardAnimator.SetTrigger("attack");
     }
 
     
