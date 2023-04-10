@@ -30,8 +30,8 @@ public class Player : MonoBehaviour
         this.distanceToGroundWhenGrounded = GetDistanceToGround() * distanceToGroundTolerance;
         this.isGrounded = true;
         this.isAttacking = false;
-        playerAnimation = this.GetComponent<PlayerAnimation>();        
-        regAttackAnimLen = playerSprite.GetComponent<Animator>().runtimeAnimatorController.animationClips.FirstOrDefault(clip => clip.name == "Attack")?.length ?? 0;        
+        this.playerAnimation = this.GetComponent<PlayerAnimation>();
+        this.regAttackAnimLen = this.playerSprite.GetComponent<Animator>().runtimeAnimatorController.animationClips.FirstOrDefault(clip => clip.name == "Attack")?.length ?? 0;        
     }
 
     // Update is called once per frame
@@ -45,10 +45,10 @@ public class Player : MonoBehaviour
     private void Move()
     {
         float input = Input.GetAxisRaw(horizontalAxis);
-        if(isGrounded & !isAttacking)
+        if(this.isGrounded & !this.isAttacking)
         {
-            this.rigidBody.velocity = new Vector2(input * playerSpeed, this.rigidBody.velocity.y);
-            playerAnimation.Move(this.rigidBody.velocity.x);
+            this.rigidBody.velocity = new Vector2(input * this.playerSpeed, this.rigidBody.velocity.y);
+            this.playerAnimation.Move(this.rigidBody.velocity.x);
             SetPlayerRotation(this.rigidBody.velocity.x);
         }  
     }
@@ -56,18 +56,18 @@ public class Player : MonoBehaviour
     private void Jump()
     {
         //In the check below rigidBody.velocity.y is very small only if the player is not in the air
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && this.isGrounded)
         {
-            isGrounded = false;
+            this.isGrounded = false;
             this.rigidBody.AddForce(new Vector2(0f, this.jumpForce), ForceMode2D.Impulse);
-            playerAnimation.SetJumpAnimation(isJumping: true);
+            this.playerAnimation.SetJumpAnimation(isJumping: true);
             StartCoroutine(UpdateJumpStatus());
         }
     }
 
     private float GetDistanceToGround()
     {
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 10f, floorLayer);        
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, 10f, this.floorLayer);        
         return hit.distance;        
     }
 
@@ -75,30 +75,35 @@ public class Player : MonoBehaviour
     {
         yield return new WaitForSeconds(0.06f);
 
-        while (GetDistanceToGround() > distanceToGroundWhenGrounded)
+        while (GetDistanceToGround() > this.distanceToGroundWhenGrounded)
         {
             yield return new WaitForSeconds(0.05f);
         }
 
-        isGrounded = true;
-        playerAnimation.SetJumpAnimation(isJumping : false);
+        this.isGrounded = true;
+        this.playerAnimation.SetJumpAnimation(isJumping : false);
     }
 
     private void SetPlayerRotation(float xSpeed)
     {
         if (xSpeed > 0)
         {
-            float swardAttackXPos = Mathf.Abs(swardAttackSprite.transform.localPosition.x);
-            playerSprite.flipX = false;
-            swardAttackSprite.flipY = false;
-            swardAttackSprite.transform.localPosition = new Vector3(swardAttackXPos, swardAttackSprite.transform.localPosition.y, swardAttackSprite.transform.localPosition.z);
+            
+            this.playerSprite.flipX = false;
+            this.swardAttackSprite.flipY = false;
+
+            Vector3 swardAttackNewPosition = this.swardAttackSprite.transform.localPosition;
+            swardAttackNewPosition.x = Mathf.Abs(swardAttackNewPosition.x);
+            this.swardAttackSprite.transform.localPosition = swardAttackNewPosition;
         }
         if (xSpeed < 0)
-        {
-            float swardAttackXPos = - Mathf.Abs(swardAttackSprite.transform.localPosition.x);
+        {            
             playerSprite.flipX = true;
             swardAttackSprite.flipY = true;
-            swardAttackSprite.transform.localPosition = new Vector3(swardAttackXPos, swardAttackSprite.transform.localPosition.y, swardAttackSprite.transform.localPosition.z);
+
+            Vector3 swardAttackNewPosition = this.swardAttackSprite.transform.localPosition;
+            swardAttackNewPosition.x = - Mathf.Abs(swardAttackNewPosition.x);
+            this.swardAttackSprite.transform.localPosition = swardAttackNewPosition;
         }
 
     }
