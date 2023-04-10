@@ -15,18 +15,18 @@ public class PlayerAnimation : MonoBehaviour
 
     public void Move(float moveSpeed)
     {
-        playerAnimator.SetFloat("move", Mathf.Abs(moveSpeed));
+        this.playerAnimator.SetFloat("move", Mathf.Abs(moveSpeed));
     }
 
     public void SetJumpAnimation(bool isJumping)
     {
-        playerAnimator.SetBool("isJumping", isJumping);
+        this.playerAnimator.SetBool("isJumping", isJumping);
     }
 
     public void RegAttack()
     {
-        playerAnimator.SetTrigger("attack");
-        swardAnimator.SetTrigger("attack");
+        this.playerAnimator.SetTrigger("attack");
+        this.swardAnimator.SetTrigger("attack");
     }
 
     
