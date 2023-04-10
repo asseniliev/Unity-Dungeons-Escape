@@ -8,7 +8,10 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float playerSpeed = 2;
-    [SerializeField] LayerMask floorLayer;
+    [SerializeField] private LayerMask floorLayer;
+    [SerializeField] private SpriteRenderer playerSprite;
+    [SerializeField] private SpriteRenderer swardAttackSprite;
+
 
     private Rigidbody2D rigidBody;
     private readonly string horizontalAxis = "Horizontal";
@@ -17,9 +20,9 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     private bool isAttacking;
     private PlayerAnimation playerAnimation;
-    private SpriteRenderer playerSprite;
-    private float regAttackAnimLen;
     
+    private float regAttackAnimLen;
+   
 
     void Start()
     {
@@ -28,10 +31,7 @@ public class Player : MonoBehaviour
         this.isGrounded = true;
         this.isAttacking = false;
         playerAnimation = this.GetComponent<PlayerAnimation>();        
-        playerSprite = this.GetComponentInChildren<SpriteRenderer>();
-        regAttackAnimLen = this.GetComponentInChildren<Animator>().runtimeAnimatorController.animationClips.FirstOrDefault(clip => clip.name == "Attack")?.length ?? 0;
-        Debug.Log(regAttackAnimLen);
-        
+        regAttackAnimLen = playerSprite.GetComponent<Animator>().runtimeAnimatorController.animationClips.FirstOrDefault(clip => clip.name == "Attack")?.length ?? 0;        
     }
 
     // Update is called once per frame
@@ -86,8 +86,20 @@ public class Player : MonoBehaviour
 
     private void SetPlayerRotation(float xSpeed)
     {
-        if (xSpeed > 0) playerSprite.flipX = false;
-        if (xSpeed < 0) playerSprite.flipX = true;
+        if (xSpeed > 0)
+        {
+            float swardAttackXPos = Mathf.Abs(swardAttackSprite.transform.localPosition.x);
+            playerSprite.flipX = false;
+            swardAttackSprite.flipY = false;
+            swardAttackSprite.transform.localPosition = new Vector3(swardAttackXPos, swardAttackSprite.transform.localPosition.y, swardAttackSprite.transform.localPosition.z);
+        }
+        if (xSpeed < 0)
+        {
+            float swardAttackXPos = - Mathf.Abs(swardAttackSprite.transform.localPosition.x);
+            playerSprite.flipX = true;
+            swardAttackSprite.flipY = true;
+            swardAttackSprite.transform.localPosition = new Vector3(swardAttackXPos, swardAttackSprite.transform.localPosition.y, swardAttackSprite.transform.localPosition.z);
+        }
 
     }
 
