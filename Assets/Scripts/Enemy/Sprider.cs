@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Sprider : Enemy
 {
-    public override void Attack()
+    public override void Update()
     {
         throw new System.NotImplementedException();
     }
@@ -15,9 +15,8 @@ public class Sprider : Enemy
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void Attack()
     {
-        
+        throw new System.NotImplementedException();
     }
 }

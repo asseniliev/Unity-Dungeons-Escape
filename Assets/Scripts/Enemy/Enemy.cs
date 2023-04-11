@@ -4,9 +4,12 @@ using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
-    protected int health;
-    protected int speed;
-    protected int gems;
+    [SerializeField] protected int health;
+    [SerializeField] protected int speed;
+    [SerializeField] protected int gems;
+
+    public abstract void Update();
 
     public abstract void Attack();
+
 }
