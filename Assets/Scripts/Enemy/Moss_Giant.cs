@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Moss_Giant : Enemy
 {
-    private Transform moveTarget;    
+    private Vector3 moveTarget;    
 
     void Start()
     {
-        this.moveTarget = this.pointB;
+        this.moveTarget = this.pointB.position;
     }
 
 
@@ -26,17 +26,16 @@ public class Moss_Giant : Enemy
 
     private void SwapMoveTarget()
     {
-        if (this.moveTarget.name == this.pointA.name)
-            this.moveTarget = this.pointB;
+        if (this.moveTarget == this.pointA.position)
+            this.moveTarget = this.pointB.position;
         else
-            this.moveTarget = this.pointA;        
+            this.moveTarget = this.pointA.position;        
     }
 
     private void Move()
     {
-        Debug.Log(this.moveTarget);
         float step = this.speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(this.transform.position, this.moveTarget.position, step);        
+        this.transform.position = Vector3.MoveTowards(this.transform.position, this.moveTarget, step);        
         if(TargetPositionReached())
         {
             SwapMoveTarget();
@@ -45,8 +44,7 @@ public class Moss_Giant : Enemy
 
     private bool TargetPositionReached()
     {
-        Debug.Log(Vector3.Distance(this.transform.position, this.moveTarget.position));
-        return Vector3.Distance(this.transform.position, this.moveTarget.position) < 0.1f;
+        return Vector3.Distance(this.transform.position, this.moveTarget) < 0.01f;
     }
 
 }
