@@ -1,20 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Moss_Giant : Enemy
 {
-    private Vector3 moveTarget;    
+    [SerializeField] SpriteRenderer mossGiantSprite;
+    private Vector3 moveTarget;
+    private Moss_Giant_Animation mossGiantAnim;
 
     void Start()
     {
         this.moveTarget = this.pointB.position;
+        mossGiantAnim = this.GetComponent<Moss_Giant_Animation>();
     }
 
 
     public override void Update()
     {
-        Move();
+        if(mossGiantAnim.idleAnimationNotPlaying())
+        {
+            Move();
+        }
     }
 
     // Start is called before the first frame update
@@ -38,6 +45,8 @@ public class Moss_Giant : Enemy
         this.transform.position = Vector3.MoveTowards(this.transform.position, this.moveTarget, step);        
         if(TargetPositionReached())
         {
+            mossGiantAnim.playIdle();
+            mossGiantSprite.flipX = !mossGiantSprite.flipX;
             SwapMoveTarget();
         }
     }

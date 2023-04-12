@@ -19,8 +19,7 @@ public class Player : MonoBehaviour
     private float distanceToGroundTolerance = 1.05f;
     private bool isGrounded;
     private bool isAttacking;
-    private PlayerAnimation playerAnimation;
-    
+    private PlayerAnimation playerAnimation;    
     private float regAttackAnimLen;
    
 
@@ -31,7 +30,7 @@ public class Player : MonoBehaviour
         this.isGrounded = true;
         this.isAttacking = false;
         this.playerAnimation = this.GetComponent<PlayerAnimation>();
-        this.regAttackAnimLen = this.playerSprite.GetComponent<Animator>().runtimeAnimatorController.animationClips.FirstOrDefault(clip => clip.name == "Attack")?.length ?? 0;        
+        this.regAttackAnimLen = this.playerAnimation.GetRegAttackAnimationLength();
     }
 
     // Update is called once per frame

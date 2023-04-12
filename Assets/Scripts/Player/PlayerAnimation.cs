@@ -7,11 +7,6 @@ public class PlayerAnimation : MonoBehaviour
 {
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private Animator swardAnimator;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     public void Move(float moveSpeed)
     {
@@ -27,6 +22,11 @@ public class PlayerAnimation : MonoBehaviour
     {
         this.playerAnimator.SetTrigger("attack");
         this.swardAnimator.SetTrigger("attack");
+    }
+
+    public float GetRegAttackAnimationLength()
+    {
+        return this.playerAnimator.runtimeAnimatorController.animationClips.FirstOrDefault(clip => clip.name == "Attack")?.length ?? 0;
     }
 
     
