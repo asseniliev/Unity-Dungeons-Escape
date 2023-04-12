@@ -1,27 +1,31 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
 public class Moss_Giant : Enemy
 {
     [SerializeField] SpriteRenderer mossGiantSprite;
     private Vector3 moveTarget;
     private Moss_Giant_Animation mossGiantAnim;
+    private bool targetPositionAnimRunning = false;
+    private float idleAnimLen;
+    private bool isAttacking = false;
+    private bool mustMove = false;
 
     void Start()
     {
         this.moveTarget = this.pointB.position;
-        mossGiantAnim = this.GetComponent<Moss_Giant_Animation>();
+        this.mossGiantAnim = this.GetComponent<Moss_Giant_Animation>();
+        this.idleAnimLen = this.mossGiantAnim.GetIdleAnimationLength();
+        StartCoroutine(WalkCycle());
     }
 
 
     public override void Update()
     {
-        if(mossGiantAnim.idleAnimationNotPlaying())
-        {
-            Move();
-        }
+        if (mustMove) Move();
+
+        //if (Input.GetKeyDown(KeyCode.Mouse1)) isAttacking = true;
+
     }
 
     // Start is called before the first frame update
@@ -41,14 +45,7 @@ public class Moss_Giant : Enemy
 
     private void Move()
     {
-        float step = this.speed * Time.deltaTime;
-        this.transform.position = Vector3.MoveTowards(this.transform.position, this.moveTarget, step);        
-        if(TargetPositionReached())
-        {
-            mossGiantAnim.playIdle();
-            mossGiantSprite.flipX = !mossGiantSprite.flipX;
-            SwapMoveTarget();
-        }
+        this.transform.position = Vector3.MoveTowards(this.transform.position, this.moveTarget, this.speed * Time.deltaTime);
     }
 
     private bool TargetPositionReached()
@@ -56,4 +53,37 @@ public class Moss_Giant : Enemy
         return Vector3.Distance(this.transform.position, this.moveTarget) < 0.01f;
     }
 
+    IEnumerator WalkCycle()
+    {
+        while(!isAttacking)
+        {
+            //Debug.Log("Step1");
+            //this.mossGiantAnim.playIdle();
+            yield return new WaitForSeconds(idleAnimLen);
+            yield return new WaitForSeconds(0.06f);
+
+            //Debug.Log("Step2");
+            this.mossGiantAnim.playMove();
+            yield return new WaitForSeconds(0.06f);
+            mustMove = true;
+
+            //Debug.Log("Step3");
+            while (!TargetPositionReached()) yield return null;
+
+            //Debug.Log("Step4");
+            this.mossGiantAnim.playIdle();
+            mustMove = false;
+            yield return new WaitForSeconds(idleAnimLen);
+
+            this.mossGiantSprite.flipX = !this.mossGiantSprite.flipX;
+            this.mossGiantAnim.playMove();
+            this.mossGiantAnim.playIdle();
+            yield return new WaitForSeconds(0.05f);
+
+            SwapMoveTarget();
+            yield return new WaitForSeconds(0.05f);
+
+            //this.mossGiantAnim.playIdle();
+        }
+    }
 }
