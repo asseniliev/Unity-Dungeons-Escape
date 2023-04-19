@@ -3,10 +3,9 @@ using UnityEngine;
 
 public class Moss_Giant : Enemy
 {
-    [SerializeField] SpriteRenderer mossGiantSprite;
+    [SerializeField] SpriteRenderer enemySprite;
     private Vector3 moveTarget;
-    private Moss_Giant_Animation mossGiantAnim;
-    private bool targetPositionAnimRunning = false;
+    private Moss_Giant_Animation enemyAnimation;
     private float idleAnimLen;
     private bool isAttacking = false;
     private bool mustMove = false;
@@ -14,8 +13,8 @@ public class Moss_Giant : Enemy
     void Start()
     {
         this.moveTarget = this.pointB.position;
-        this.mossGiantAnim = this.GetComponent<Moss_Giant_Animation>();
-        this.idleAnimLen = this.mossGiantAnim.GetIdleAnimationLength();
+        this.enemyAnimation = this.GetComponent<Moss_Giant_Animation>();
+        this.idleAnimLen = this.enemyAnimation.GetIdleAnimationLength();
         StartCoroutine(WalkCycle());
     }
 
@@ -23,16 +22,11 @@ public class Moss_Giant : Enemy
     public override void Update()
     {
         if (mustMove) Move();
-
-        //if (Input.GetKeyDown(KeyCode.Mouse1)) isAttacking = true;
-
     }
-
-    // Start is called before the first frame update
 
     public override void Attack()
     {
-        //throw new System.NotImplementedException();
+        Debug.Log(this.transform.name + " is attacking");
     }
 
     private void SwapMoveTarget()
@@ -57,33 +51,32 @@ public class Moss_Giant : Enemy
     {
         while(!isAttacking)
         {
-            //Debug.Log("Step1");
-            //this.mossGiantAnim.playIdle();
+            //Debug.Log("Step1: Play idle animation");            
             yield return new WaitForSeconds(idleAnimLen);
             yield return new WaitForSeconds(0.06f);
 
-            //Debug.Log("Step2");
-            this.mossGiantAnim.playMove();
+            //Debug.Log("Step2: Trigger move animation");
+            this.enemyAnimation.playMove();
             yield return new WaitForSeconds(0.06f);
             mustMove = true;
 
-            //Debug.Log("Step3");
+            //Debug.Log("Step3: do nothing while moving");
             while (!TargetPositionReached()) yield return null;
 
-            //Debug.Log("Step4");
-            this.mossGiantAnim.playIdle();
+            //Debug.Log("Step4: trigger idle animation and wait until it is played");
+            this.enemyAnimation.playIdle();
             mustMove = false;
             yield return new WaitForSeconds(idleAnimLen);
 
-            this.mossGiantSprite.flipX = !this.mossGiantSprite.flipX;
-            this.mossGiantAnim.playMove();
-            this.mossGiantAnim.playIdle();
+            //Debug.Log("Step5: Flip sprite and re-trigger idle animation");
+            this.enemySprite.flipX = !this.enemySprite.flipX;
+            this.enemyAnimation.playMove();
+            this.enemyAnimation.playIdle();
             yield return new WaitForSeconds(0.05f);
 
+            //Debug.Log("Step6: Swap target positions");
             SwapMoveTarget();
             yield return new WaitForSeconds(0.05f);
-
-            //this.mossGiantAnim.playIdle();
         }
     }
 }

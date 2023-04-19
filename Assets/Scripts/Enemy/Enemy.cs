@@ -8,7 +8,6 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] protected float speed;
     [SerializeField] protected int gems;
     [SerializeField] protected Transform pointA, pointB;
-    [SerializeField] protected Animator animator;
 
     public abstract void Update();
 
