@@ -27,7 +27,7 @@ public abstract class Enemy : MonoBehaviour
 
     public virtual void Update()
     {
-        if (mustMove) Move();
+        if (this.mustMove) Move();
     }
 
 
@@ -49,11 +49,14 @@ public abstract class Enemy : MonoBehaviour
         return Vector3.Distance(this.transform.position, this.moveTarget) < 0.01f;
     }
 
-    public abstract void Attack();
+    public virtual void Attack()
+    {
+        Debug.Log(this.transform.name + " is attacking");
+    }
 
     IEnumerator WalkCycle()
     {
-        while (!isAttacking)
+        while (!this.isAttacking)
         {
             //Debug.Log("Step1: Play idle animation");            
             yield return new WaitForSeconds(idleAnimLen);
@@ -62,14 +65,14 @@ public abstract class Enemy : MonoBehaviour
             //Debug.Log("Step2: Trigger move animation");
             this.enemyAnimation.playMove();
             yield return new WaitForSeconds(0.06f);
-            mustMove = true;
+            this.mustMove = true;
 
             //Debug.Log("Step3: do nothing while moving");
             while (!TargetPositionReached()) yield return null;
 
             //Debug.Log("Step4: trigger idle animation and wait until it is played");
             this.enemyAnimation.playIdle();
-            mustMove = false;
+            this.mustMove = false;
             yield return new WaitForSeconds(idleAnimLen);
 
             //Debug.Log("Step5: Flip sprite and re-trigger idle animation");

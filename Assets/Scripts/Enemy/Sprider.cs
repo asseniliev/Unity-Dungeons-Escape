@@ -6,6 +6,6 @@ public class Sprider : Enemy
 {
     public override void Attack()
     {
-        Debug.Log(this.transform.name + " is attacking");
+        base.Attack();
     }
 }
