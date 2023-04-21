@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour, IDamageable
 {
     [SerializeField] SpriteRenderer enemySprite;
     [SerializeField] protected int health;
@@ -16,9 +16,24 @@ public abstract class Enemy : MonoBehaviour
 
     private Enemy_Animation enemyAnimation;
     private float idleAnimLen;
+    private EventManager eventManager;
+    private int instanceId;
+
+    private void OnEnable()
+    {
+        this.eventManager = GameObject.Find("GameManager").GetComponent<EventManager>();
+        this.eventManager.causedDamage += TakeDamage;
+    }
+
+    private void OnDisable()
+    {
+        this.eventManager.causedDamage -= TakeDamage;
+    }
 
     public virtual void Start()
     {
+        this.instanceId = this.gameObject.GetInstanceID();
+        //Debug.Log(this.gameObject.name + " - instance id: " + this.instanceId);
         this.moveTarget = this.pointB.position;
         this.enemyAnimation = this.GetComponent<Enemy_Animation>();
         this.idleAnimLen = this.enemyAnimation.GetIdleAnimationLength();
@@ -87,4 +102,12 @@ public abstract class Enemy : MonoBehaviour
         }
     }
 
+    public virtual void TakeDamage(int targetId, int damageAmount)
+    {
+        if(this.instanceId == targetId)
+        {
+            //this.health -= hitPoints;
+            Debug.Log("Me, " + this.gameObject.name + ", I was hit");
+        }
+    }
 }
