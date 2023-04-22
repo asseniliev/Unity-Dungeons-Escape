@@ -6,6 +6,6 @@ public interface IDamageable
 {
 
     void TakeDamage(int targetId,int damageAmount);
-
+    void Die();
 
 }

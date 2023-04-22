@@ -7,7 +7,7 @@ public class EventManager : MonoBehaviour
     public static EventManager eventManager;
 
     public delegate void damageHandler(int target, int damage);
-    public event damageHandler causedDamage;
+    public event damageHandler hit;
 
     private void Awake()
     {
@@ -25,8 +25,8 @@ public class EventManager : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
-    public void CallCausedDamageEvent(int target, int damage)
+    public void CallHitEvent(int target, int damage)
     {
-        causedDamage?.Invoke(target, damage);
+        hit?.Invoke(target, damage);
     }
 }

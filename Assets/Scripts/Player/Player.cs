@@ -21,10 +21,6 @@ public class Player : MonoBehaviour
     private bool isAttacking;
     private PlayerAnimation playerAnimation;    
     private float regAttackAnimLen;
-    private float coolDownAfterAttackTime;
-
-    private float lastAttackTime;
-   
 
     void Start()
     {
@@ -33,9 +29,7 @@ public class Player : MonoBehaviour
         this.isGrounded = true;
         this.isAttacking = false;
         this.playerAnimation = this.GetComponent<PlayerAnimation>();
-        this.regAttackAnimLen = this.playerAnimation.GetRegAttackAnimationLength();
-        this.coolDownAfterAttackTime = this.regAttackAnimLen + 0.1f;
-        this.lastAttackTime = 0;
+        this.regAttackAnimLen = this.playerAnimation.GetRegAttackAnimationLength();        
     }
 
     // Update is called once per frame
@@ -115,10 +109,8 @@ public class Player : MonoBehaviour
     private void RegAttack()
     {
         if(Input.GetKeyDown(KeyCode.Mouse0) 
-        && isGrounded 
-        && (Time.time - this.lastAttackTime) > coolDownAfterAttackTime)
+        && isGrounded && !isAttacking)
         {
-            this.lastAttackTime = Time.time;
             playerAnimation.RegAttack();
             StartCoroutine(AttackMode());
         }

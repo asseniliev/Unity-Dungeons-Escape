@@ -19,15 +19,19 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     private EventManager eventManager;
     private int instanceId;
 
-    private void OnEnable()
+    private void Awake()
     {
         this.eventManager = GameObject.Find("GameManager").GetComponent<EventManager>();
-        this.eventManager.causedDamage += TakeDamage;
+    }
+
+    private void OnEnable()    {
+        
+        this.eventManager.hit += TakeDamage;
     }
 
     private void OnDisable()
     {
-        this.eventManager.causedDamage -= TakeDamage;
+        this.eventManager.hit -= TakeDamage;
     }
 
     public virtual void Start()
@@ -106,8 +110,15 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     {
         if(this.instanceId == targetId)
         {
-            //this.health -= hitPoints;
-            Debug.Log("Me, " + this.gameObject.name + ", I was hit");
+            this.health -= damageAmount;
+            Debug.Log(this.gameObject.name + " was hit");
+            if (this.health <= 0) Die();
         }
+    }
+
+    public void Die()
+    {
+        Debug.Log(this.gameObject.name + " is dead");
+        Destroy(this.gameObject, 2);
     }
 }

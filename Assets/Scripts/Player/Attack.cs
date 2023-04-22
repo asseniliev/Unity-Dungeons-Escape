@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
+    [SerializeField] private int damage = 1;
     private EventManager eventManager;
     private void Awake()
     {
@@ -12,6 +13,6 @@ public class Attack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        eventManager.CallCausedDamageEvent(other.gameObject.GetInstanceID(), 1);
+        eventManager.CallHitEvent(other.gameObject.GetInstanceID(), damage);
     }
 }
