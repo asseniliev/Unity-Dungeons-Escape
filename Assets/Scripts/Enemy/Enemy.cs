@@ -10,12 +10,13 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     [SerializeField] protected int gems;
     [SerializeField] protected Transform pointA, pointB;
 
-    protected Vector3 moveTarget;
-    protected bool isAttacking = false;
-    protected bool mustMove = false;
-
+    private Vector3 moveTarget;
+    private bool isAttacking = false;
+    private bool isBeingHit = false;
+    private bool mustMove = false;
     private Enemy_Animation enemyAnimation;
     private float idleAnimLen;
+    private float hitAnimLen;
     private EventManager eventManager;
     private int instanceId;
 
@@ -41,12 +42,13 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         this.moveTarget = this.pointB.position;
         this.enemyAnimation = this.GetComponent<Enemy_Animation>();
         this.idleAnimLen = this.enemyAnimation.GetIdleAnimationLength();
+        this.hitAnimLen = this.enemyAnimation.GetHitAnimationLength();
         StartCoroutine(WalkCycle());
     }
 
     public virtual void Update()
     {
-        if (this.mustMove) Move();
+        if (this.mustMove && !this.isBeingHit) Move();
     }
 
 
@@ -110,9 +112,18 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     {
         if(this.instanceId == targetId)
         {
+            
             this.health -= damageAmount;
             Debug.Log(this.gameObject.name + " was hit");
-            if (this.health <= 0) Die();
+            if (this.health <= 0) 
+                Die();
+            else
+            {
+                this.enemyAnimation.GetCurrentStateInfo();
+                this.enemyAnimation.playHit();
+                StartCoroutine(hitMode());
+            }
+                
         }
     }
 
@@ -120,5 +131,12 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     {
         Debug.Log(this.gameObject.name + " is dead");
         Destroy(this.gameObject, 2);
+    }
+
+    private IEnumerator hitMode()
+    {
+        this.isBeingHit = true;
+        yield return new WaitForSeconds(this.hitAnimLen);
+        this.isBeingHit = false;
     }
 }
