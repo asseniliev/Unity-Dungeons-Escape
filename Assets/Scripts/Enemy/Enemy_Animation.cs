@@ -40,6 +40,5 @@ public class Enemy_Animation : MonoBehaviour
     public void playHit()
     {
         this.enemyAnimator.SetTrigger("BeenHit");
-
     }
 }

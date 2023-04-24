@@ -114,16 +114,15 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         {
             
             this.health -= damageAmount;
-            Debug.Log(this.gameObject.name + " was hit");
             if (this.health <= 0) 
                 Die();
             else
             {
                 this.enemyAnimation.GetCurrentStateInfo();
                 this.enemyAnimation.playHit();
+                StopCoroutine(hitMode());
                 StartCoroutine(hitMode());
-            }
-                
+            }   
         }
     }
 
@@ -137,6 +136,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     {
         this.isBeingHit = true;
         yield return new WaitForSeconds(this.hitAnimLen);
+        yield return new WaitForSeconds(this.idleAnimLen);
         this.isBeingHit = false;
     }
 }
