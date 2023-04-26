@@ -28,8 +28,8 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         this.player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    private void OnEnable()    {
-        
+    private void OnEnable()    
+    {
         this.eventManager.hit += TakeDamage;
         this.eventManager.animStart += SetCanMoveFalse;
         this.eventManager.animEnd += SetCanMoveTrue;
@@ -39,8 +39,8 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     private void OnDisable()
     {
         this.eventManager.hit -= TakeDamage;
-        this.eventManager.animStart -= SetCanMoveFalse;
-        this.eventManager.animEnd -= SetCanMoveTrue;
+        EventManager.eventManager.animStart -= SetCanMoveFalse;
+        EventManager.eventManager.animEnd -= SetCanMoveTrue;
         this.eventManager.flipSprite -= FlipSprite;
     }
 
@@ -73,7 +73,6 @@ public abstract class Enemy : MonoBehaviour, IDamageable
             this.enemyAnimation.PlayIdle();
         }
     }
-
 
     private void SwapMoveTarget()
     {
@@ -151,6 +150,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         if(Mathf.Abs(this.transform.position.x - this.player.position.x) < this.distanceForCombat)
         {
             this.isInCombat = true;
+            this.canMove = false;
             this.enemyAnimation.SetInCombatMode(true);
         }
         else
@@ -177,13 +177,21 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     private void SetCanMoveTrue(string amimationName, string objectName)
     {
         if(this.transform.name == objectName && amimationName == "Idle")
+        {
+            //Debug.Log("Event triggered SetCanMoveTrue at " + Time.frameCount);
             this.canMove = true;
+        }
+            
     }
 
     private void SetCanMoveFalse(string amimationName, string objectName)
     {
         if (this.transform.name == objectName && amimationName == "Idle")
+        {
+            //Debug.Log("Event triggered SetCanMoveFalse at frame " + Time.frameCount);
             this.canMove = false;
+        }
+            
     }
 
     private void FlipSprite()

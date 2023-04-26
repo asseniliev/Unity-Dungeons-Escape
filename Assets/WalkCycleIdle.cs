@@ -5,33 +5,32 @@ using UnityEngine.Events;
 
 public class WalkCycleIdle : StateMachineBehaviour
 {
-    int IdleAnimIteration = 2;
-
+    int IdleAnimIteration;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        //Debug.Log(animator.transform.root.name);
-        EventManager.eventManager.CallAnimStartEvent("Idle", animator.transform.root.name);
+        EventManager.eventManager.CallAnimStartEvent("Idle", animator.transform.root.name);        
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (stateInfo.normalizedTime > 1)
+        if (stateInfo.normalizedTime > 1 ) 
         {
-            if (IdleAnimIteration == 2)
+            
+            if (animator.GetInteger("IdleAnimIteration") == 2)
             {
-                //Debug.Log("Update trigger 'MOVE'");
-                IdleAnimIteration = 1;
+                //Debug.Log("Update trigger 'MOVE' at frame " + Time.frameCount);                
                 EventManager.eventManager.CallAnimEndEvent("Idle", animator.transform.root.name);
                 animator.SetTrigger("Walk");
+                animator.SetInteger("IdleAnimIteration",  1);
             }
             else
             {
-                //Debug.Log("Update trigger 'IDLE'");
-                IdleAnimIteration = 2;
+                //Debug.Log("Update trigger 'IDLE' at frame " + Time.frameCount);                
                 EventManager.eventManager.CallFlipSpriteEvent();
-                animator.SetTrigger("Idle");                
+                animator.SetTrigger("Idle");
+                animator.SetInteger("IdleAnimIteration", 2);
             }
         }
     }
