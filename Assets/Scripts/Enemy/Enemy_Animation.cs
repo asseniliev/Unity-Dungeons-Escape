@@ -25,20 +25,23 @@ public class Enemy_Animation : MonoBehaviour
         //this.enemyAnimator.runtimeAnimatorController.animationClips.FirstOrDefault(x => x.GetHashCode() == stateHash);
     }
 
-    public void playIdle()
+    public void PlayIdle()
     {
         this.enemyAnimator.SetTrigger("Idle");
-        this.enemyAnimator.SetInteger("PrevState", 1);
     }
 
-    public void playMove()
+    public void PlayMove()
     {
         this.enemyAnimator.SetTrigger("Move");
-        this.enemyAnimator.SetInteger("PrevState", 2);
     }
 
-    public void playHit()
+    public void PlayHit()
     {
         this.enemyAnimator.SetTrigger("BeenHit");
+    }
+
+    public void SetInCombatMode(bool value)
+    {
+        this.enemyAnimator.SetBool("IsInCombat", value);
     }
 }
