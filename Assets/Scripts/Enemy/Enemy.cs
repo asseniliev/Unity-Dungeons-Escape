@@ -11,7 +11,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     [SerializeField] protected Transform pointA, pointB;
     [SerializeField] protected float distanceForCombat;
 
-    private Vector3 moveTarget;
+    private Vector3 moveTargetPosition;
     private bool isInCombat = false;
     private bool isBeingHit = false;
     private bool canMove = false;
@@ -48,7 +48,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
     {
         this.instanceId = this.gameObject.GetInstanceID();
         //Debug.Log(this.gameObject.name + " - instance id: " + this.instanceId);
-        this.moveTarget = this.pointB.position;
+        this.moveTargetPosition = this.pointB.position;
         this.enemyAnimation = this.GetComponent<Enemy_Animation>();
         this.idleAnimLen = this.enemyAnimation.GetIdleAnimationLength();
         this.hitAnimLen = this.enemyAnimation.GetHitAnimationLength();
@@ -62,6 +62,8 @@ public abstract class Enemy : MonoBehaviour, IDamageable
         CheckForTargetPositionReached();
 
         CheckIfPlayerAround();
+
+        SetSpriteOrientation();
     }
 
 
@@ -76,20 +78,20 @@ public abstract class Enemy : MonoBehaviour, IDamageable
 
     private void SwapMoveTarget()
     {
-        if (this.moveTarget == this.pointA.position)
-            this.moveTarget = this.pointB.position;
+        if (this.moveTargetPosition == this.pointA.position)
+            this.moveTargetPosition = this.pointB.position;
         else
-            this.moveTarget = this.pointA.position;
+            this.moveTargetPosition = this.pointA.position;
     }
 
     public virtual void Move()
     {
-        this.transform.position = Vector3.MoveTowards(this.transform.position, this.moveTarget, this.speed * Time.deltaTime);
+        this.transform.position = Vector3.MoveTowards(this.transform.position, this.moveTargetPosition, this.speed * Time.deltaTime);
     }
 
     private bool IsTargetPositionReached()
     {
-        return Vector3.Distance(this.transform.position, this.moveTarget) < 0.01f;
+        return Vector3.Distance(this.transform.position, this.moveTargetPosition) < 0.01f;
     }
 
     public virtual void Attack()
@@ -192,6 +194,24 @@ public abstract class Enemy : MonoBehaviour, IDamageable
             this.canMove = false;
         }
             
+    }
+
+    private void SetSpriteOrientation()
+    {
+        if (this.isInCombat)
+        {
+            if (this.transform.position.x < this.player.position.x)
+                enemySprite.flipX = false;
+            else
+                enemySprite.flipX = true;
+        } 
+        else
+        {
+            if (this.transform.position.x < this.moveTargetPosition.x)
+                enemySprite.flipX = false;
+            else
+                enemySprite.flipX = true;
+        }
     }
 
     private void FlipSprite()

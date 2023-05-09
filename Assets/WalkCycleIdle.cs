@@ -5,17 +5,19 @@ using UnityEngine.Events;
 
 public class WalkCycleIdle : StateMachineBehaviour
 {
-    int IdleAnimIteration;
+    bool isInCombat; 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        EventManager.eventManager.CallAnimStartEvent("Idle", animator.transform.root.name);        
+        isInCombat = animator.GetBool("isInCombat");
+        EventManager.eventManager.CallAnimStartEvent("Idle", animator.transform.root.name);
+        Debug.Log("IdleAnimIteration = " + animator.GetInteger("IdleAnimIteration"));
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (stateInfo.normalizedTime > 1 ) 
+        if (stateInfo.normalizedTime > 1 && !isInCombat) 
         {
             
             if (animator.GetInteger("IdleAnimIteration") == 2)
@@ -33,6 +35,7 @@ public class WalkCycleIdle : StateMachineBehaviour
                 animator.SetInteger("IdleAnimIteration", 2);
             }
         }
+        
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
