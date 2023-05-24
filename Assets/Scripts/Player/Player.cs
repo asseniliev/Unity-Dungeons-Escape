@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float jumpForce = 5f;
     [SerializeField] private float playerSpeed = 2;
+    [SerializeField] protected int health;
     [SerializeField] private LayerMask floorLayer;
     [SerializeField] private SpriteRenderer playerSprite;
     [SerializeField] private SpriteRenderer swardAttackSprite;
@@ -21,9 +22,28 @@ public class Player : MonoBehaviour
     private bool isAttacking;
     private PlayerAnimation playerAnimation;    
     private float regAttackAnimLen;
+    private EventManager eventManager;
+    private int instanceId;
+
+    private void Awake()
+    {
+        this.eventManager = GameObject.Find("GameManager").GetComponent<EventManager>();
+    }
+
+    private void OnEnable()
+    {
+        this.eventManager.hit += TakeDamage;
+    }
+
+    private void OnDisable()
+    {
+        this.eventManager.hit -= TakeDamage;
+    }
+
 
     void Start()
     {
+        this.instanceId = this.gameObject.GetInstanceID();
         this.rigidBody = GetComponent<Rigidbody2D>();
         this.distanceToGroundWhenGrounded = GetDistanceToGround() * distanceToGroundTolerance;
         this.isGrounded = true;
@@ -122,5 +142,27 @@ public class Player : MonoBehaviour
         this.rigidBody.velocity = new Vector2(0, this.rigidBody.velocity.y);
         yield return new WaitForSeconds(regAttackAnimLen);
         isAttacking = false;
+    }
+
+    public virtual void TakeDamage(int targetId, int damageAmount)
+    {
+        if (this.instanceId == targetId)
+        {
+            this.health -= damageAmount;
+            if (this.health <= 0)
+                Die();
+            else
+            {
+                Debug.Log(this.transform.name);
+                //this.canMove = false;
+                //this.enemyAnimation.PlayHit();
+            }
+        }
+    }
+
+    public void Die()
+    {
+        Debug.Log(this.gameObject.name + " is dead");
+        Destroy(this.gameObject, 2);
     }
 }

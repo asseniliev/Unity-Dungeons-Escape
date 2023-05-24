@@ -11,13 +11,13 @@ public class WalkCycleIdle : StateMachineBehaviour
     {
         
         EventManager.eventManager.CallAnimStartEvent("Idle", animator.transform.root.name);
-        Debug.Log("IdleAnimIteration = " + animator.GetInteger("IdleAnimIteration"));
+        //Debug.Log("IdleAnimIteration = " + animator.GetInteger("IdleAnimIteration"));
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        isInCombat = animator.GetBool("isInCombat");
+        isInCombat = animator.GetBool("IsInCombat");
         if (stateInfo.normalizedTime > 1 && !isInCombat) 
         {
             

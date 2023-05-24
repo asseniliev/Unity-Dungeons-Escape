@@ -141,6 +141,7 @@ public abstract class Enemy : MonoBehaviour, IDamageable
                 Die();
             else
             {
+                Debug.Log(this.transform.name);
                 this.canMove = false;
                 this.enemyAnimation.PlayHit();
             }   

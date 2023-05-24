@@ -8,11 +8,12 @@ public class Attack : MonoBehaviour
     private EventManager eventManager;
     private void Awake()
     {
-        this.eventManager = GameObject.Find("GameManager").GetComponent<EventManager>();
+        this.eventManager = GameObject.Find("GameManager").GetComponent<EventManager>();        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log(other.gameObject.name);
         eventManager.CallHitEvent(other.gameObject.GetInstanceID(), damage);
     }
 }
